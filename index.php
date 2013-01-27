@@ -75,6 +75,16 @@ function MM_swapImage() { //v3.0
 #fb-root2 table tr th {
 	color: #FFF;
 }
+#foot {
+	text-align: center;
+}
+#princ {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: x-large;
+}
+#line1 {
+	color: #FFE400;
+}
 -->
 </style>
 </head>
@@ -358,7 +368,14 @@ function lnwbar_reportbug(){
                 <th colspan="0" align="left" valign="top" scope="row">&nbsp;</th>
               </tr>
               <tr>
-                <th height="2" colspan="6" align="left" valign="top" bgcolor="#FFFFFF" scope="row"><img src="product/chair2.png" alt="" width="1000" height="45" /></th>
+                <th height="2" colspan="6" align="left" valign="top" bgcolor="#FFFFFF" scope="row"><table width="100%" border="0" align="left" cellpadding="0" cellspacing="0">
+                  <tr>
+                    <th align="left" valign="top" bgcolor="#FFE400" scope="row"><img src="product/chair.png" alt="" width="207" height="45" /></th>
+                  </tr>
+                  <tr>
+                    <th align="left" valign="top" bgcolor="#FFFFFF" scope="row">&nbsp;</th>
+                  </tr>
+                </table></th>
               </tr>
               <tr>
                 <th height="3" colspan="6" align="left" valign="top" bgcolor="#FFFFFF" scope="row">&nbsp;</th>
@@ -405,7 +422,14 @@ function lnwbar_reportbug(){
       <td colspan="3" align="left" valign="top" scope="row">&nbsp;</td>
     </tr>
     <tr>
-      <th height="5" colspan="3" align="left" valign="middle" bgcolor="#FFE400" scope="row">&nbsp;</th>
+      <th height="5" colspan="3" align="left" valign="middle" scope="row"><table width="100%" border="0" cellpadding="0" cellspacing="0">
+        <tr>
+          <th align="left" valign="top" bgcolor="#FFE400" scope="row"><img src="product/detail.png" alt="" width="207" height="45" /></th>
+        </tr>
+        <tr>
+          <th align="left" valign="top" bgcolor="#FFFFFF" scope="row">&nbsp;</th>
+        </tr>
+      </table></th>
     </tr>
     <tr>
       <th align="right" valign="top" scope="row"><img src="product/001006.jpg" width="400" height="400" /></th>
@@ -436,7 +460,7 @@ function lnwbar_reportbug(){
           <th align="left" valign="top" scope="row"><img src="product/desc-price.gif" width="25" height="10" /></th>
         </tr>
         <tr>
-          <th align="left" valign="top" scope="row">4,290</th>
+          <th align="left" valign="top" id="princ" scope="row">4,290</th>
         </tr>
         <tr>
           <th align="left" valign="top" scope="row">&nbsp;</th>
@@ -455,7 +479,7 @@ function lnwbar_reportbug(){
 <div id="foot" >
   <table width="900" border="0" align="center" cellpadding="0" cellspacing="0">
     <tr>
-      <th colspan="2" scope="row"><li class="Copyright">Copyright 2013. Furniture Design. All Rights Reserved. </li></th>
+      <th colspan="2" scope="row"><li class="Copyright"><span id="foot">Copyright 2013. Furniture Design. All Rights Reserved. </span></li></th>
     </tr>
     <tr>
       <th scope="row">&nbsp;</th>
