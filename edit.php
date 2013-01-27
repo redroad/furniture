@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Untitled Document</title>
+<title>:: Furniture Desing ::</title>
 <style type="text/css">
 <!--
 body {
@@ -32,7 +32,17 @@ body {
 	font-weight: bold;
 }
 #fb-root2 #edit table tr th table tr th {
+	font-size: 12px;
+}
+#fb-root2 #edit table tr th table tr th00 {
+	font-family: Arial, Helvetica, sans-serif;
+}
+#fb-root2 #edit table tr th table tr th {
 	font-size: medium;
+	font-family: "ms Sans Serif";
+}
+#add {
+	color: #F00;
 }
 -->
 </style></head>
@@ -56,9 +66,9 @@ body {
   <div id="edit" >
     <table width="900" border="0" align="center" cellpadding="0" cellspacing="0">
       <tr>
-        <th width="227" scope="row">&nbsp;</th>
-        <th width="346" scope="row">&nbsp;</th>
-        <th width="327" scope="row">&nbsp;</th>
+        <th width="186" scope="row">&nbsp;</th>
+        <th width="443" scope="row">&nbsp;</th>
+        <th width="271" scope="row">&nbsp;</th>
       </tr>
       <tr>
         <th colspan="3" scope="row"><img src="product/Desing_logo.png" width="401" height="63" /></th>
@@ -70,33 +80,41 @@ body {
       </tr>
       <tr>
         <th scope="row">&nbsp;</th>
-        <th scope="row"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <th bgcolor="#CCCCCC" scope="row"><table width="99%" border="0" cellspacing="0" cellpadding="0">
           <tr>
-            <th width="33%" scope="row">&nbsp;</th>
+            <th colspan="4" scope="row">&nbsp;</th>
+            </tr>
+          <tr>
+            <th colspan="4" scope="row">&nbsp;</th>
+          </tr>
+          <tr>
+            <th colspan="4" scope="row">&nbsp;&nbsp;&nbsp;&nbsp;<span id="add">*เพิ่มข้อมูลสินค้า</span></th>
+          </tr>
+          <tr>
+            <th colspan="4" scope="row">&nbsp;</th>
+          </tr>
+          <tr>
+            <th colspan="2" scope="row">&nbsp;</th>
             <td width="4%">&nbsp;</td>
-            <td width="63%">&nbsp;</td>
+            <td width="63%"><img src="product/beta.png" width="180" height="180" /></td>
           </tr>
           <tr>
-            <th scope="row">&nbsp;</th>
-            <td>&nbsp;</td>
-            <td><img src="product/beta.png" width="180" height="180" /></td>
-          </tr>
-          <tr>
-            <th scope="row">&nbsp;</th>
+            <th colspan="2" scope="row">&nbsp;</th>
             <td>&nbsp;</td>
             <td><form id="form1" name="form1" method="post" action="">
               <label>
-                <input type="submit" name="pic" id="pic" value="เลือกรูปภาพ" />
+                <input type="file" name="pic" id="pic" value="Submit" />
               </label>
             </form></td>
           </tr>
           <tr >
-            <th style="font-family: 'ms Sans Serif'; font-size: medium;" scope="row"  >&nbsp;</th>
+            <th colspan="2" style="font-family: 'ms Sans Serif'; font-size: medium;" scope="row"  >&nbsp;</th>
             <td rowspan="4">&nbsp;</td>
             <td>&nbsp;</td>
           </tr>
           <tr >
-            <th style="font-family: 'ms Sans Serif'; font-size: medium;" scope="row"  >หมวดสินค้า</th>
+            <th width="10%" style="font-family: 'ms Sans Serif'; font-size: medium; text-align: left;" scope="row"  ><span style="text-align: center"></span></th>
+            <th width="23%" style="font-family: 'ms Sans Serif'; font-size: medium; text-align: left;" scope="row"  >หมวดสินค้า</th>
             <td><form id="form5" name="form5" method="post" action="">
               <label>
                 <select name="list" id="list" style="width:150 ">
@@ -112,23 +130,25 @@ body {
             </form></td>
           </tr>
           <tr >
-            <th style="font-family: 'ms Sans Serif'; font-size: medium;" scope="row"  >&nbsp;</th>
+            <th colspan="2" style="font-family: 'ms Sans Serif'; font-size: medium;" scope="row"  >&nbsp;</th>
             <td>&nbsp;</td>
           </tr>
           <tr >
-            <th style="font-family: 'ms Sans Serif'; font-size: medium;" scope="row"  >ชื่อสินค้า</th>
+            <th style="font-family: 'ms Sans Serif'; font-size: medium; text-align: left;" scope="row"  >&nbsp;</th>
+            <th style="font-family: 'ms Sans Serif'; font-size: medium; text-align: left;" scope="row"  >ชื่อสินค้า<span style="text-align: left"></span></th>
             <td><form id="form2" name="form2" method="post" action="">
               <label>
                 <input type="text" name="name_pro" id="name_pro" />
-              </label>
+                </label>
             </form></td>
           </tr>
           <tr>
-            <th scope="row">&nbsp;</th>
+            <th colspan="2" scope="row">&nbsp;</th>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
           </tr>
           <tr>
+            <th scope="row">&nbsp;</th>
             <th scope="row">รายละเอียด</th>
             <td>&nbsp;</td>
             <td><form id="form3" name="form3" method="post" action="">
@@ -138,11 +158,12 @@ body {
             </form></td>
           </tr>
           <tr>
-            <th scope="row">&nbsp;</th>
+            <th colspan="2" scope="row">&nbsp;</th>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
           </tr>
           <tr>
+            <th scope="row">&nbsp;</th>
             <th scope="row">ราคา</th>
             <td>&nbsp;</td>
             <td><form id="form4" name="form4" method="post" action="">
@@ -152,7 +173,21 @@ body {
             </form></td>
           </tr>
           <tr>
-            <th scope="row">&nbsp;</th>
+            <th colspan="2" scope="row">&nbsp;</th>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+          </tr>
+          <tr>
+            <th colspan="2" scope="row">&nbsp;</th>
+            <td>&nbsp;</td>
+            <td><form id="form6" name="form6" method="post" action="">
+              <label>
+                <input type="submit" name="save" id="save" value="บันทึก"  style=" width:150px; height:50px;"//>
+              </label>
+            </form></td>
+          </tr>
+          <tr>
+            <th colspan="2" scope="row">&nbsp;</th>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
           </tr>
