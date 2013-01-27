@@ -64,9 +64,9 @@ if ($act == "register") {
 }
 
 if ($act == "login") {
+
     $email = isset($_REQUEST['email']) ? $_REQUEST['email'] : "";
     $password = isset($_REQUEST['password']) ? $_REQUEST['password'] : "";
-
     $sql = "SELECT * FROM member WHERE email='$email'";
     $rs = $db->query($sql);
     $result = array("success" => false, "desc" => "", "data" => array());
@@ -79,8 +79,10 @@ if ($act == "login") {
             $result['success'] = TRUE;
             $result['desc'] = "success";
             $result['data'] = $rs[0];
-            session_start();
+            @session_start();
             $_SESSION['user'] = $rs[0];
+            // var_dump($_SESSION['user']);
+            //   header('Location: ../index.php');
         }
     }
     echo json_encode($result);
@@ -156,7 +158,10 @@ if ($act == "update") {
 }
 
 if ($act == "logout") {
+    @session_start();
     session_destroy();
+    header('Location: ../index.php');
+    
 }
 
 $db->close();
