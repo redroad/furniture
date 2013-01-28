@@ -90,7 +90,7 @@
                                 <th align="right" valign="middle" bgcolor="#333333" scope="row"><table width="186" border="0" cellpadding="0" cellspacing="0">
                                         <tr>
                                             <th align="left" valign="top" bgcolor="#333333" scope="row" height="31px"><a href="/controller/membercontrol.php?act=logout"><img src="product/login.gif" alt="" width="23" height="31" align="absmiddle" /></a></th>
-                                            <th align="left" valign="middle" bgcolor="#333333" scope="row"><?php echo (!empty($_SESSION['user']) ? "<a href='/controller/membercontrol.php?act=logout'>" . $_SESSION['user']['name_display'] . "</a>" : "<a href=\"login.php\">เข้าสู่ระบบ</a>"); ?></th>
+                                            <th align="left" valign="middle" bgcolor="#333333" scope="row"><?php echo (!empty($_SESSION['user']) ? "<a href='edit.php'>" . $_SESSION['user']['name_display'] . "</a>" : "<a href=\"login.php\">เข้าสู่ระบบ</a>"); ?></th>
                                             <th align="left" valign="top" bgcolor="#333333" scope="row"><img src="product/member.gif" alt="" width="22" height="31" align="absmiddle" /></th>
                                             <th align="left" valign="middle" bgcolor="#333333" scope="row">สมัครสมาชิก</th>
                                         </tr>
