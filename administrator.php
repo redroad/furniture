@@ -47,7 +47,10 @@ body {
 	font-weight: bold;
 	color: #03F;
 }
-.style3 {font-size: medium; }
+.style3 {
+	font-size: medium;
+	text-align: left;
+}
 -->
 </style></head>
 
@@ -70,11 +73,11 @@ body {
   <div id="list">
     <table width="1000" border="0" align="center" cellpadding="0" cellspacing="0">
       <tr>
-        <th width="132" scope="row">&nbsp;</th>
-        <td width="306">&nbsp;</td>
-        <td width="158">&nbsp;</td>
-        <td width="320">&nbsp;</td>
-        <td width="84">&nbsp;</td>
+        <th width="258" scope="row">&nbsp;</th>
+        <td width="173">&nbsp;</td>
+        <td width="170">&nbsp;</td>
+        <td width="162">&nbsp;</td>
+        <td width="237">&nbsp;</td>
       </tr>
       <tr>
         <th colspan="5" scope="row"><table width="100%" border="0" cellspacing="0" cellpadding="0">
@@ -85,38 +88,47 @@ body {
       </tr>
       <tr>
         <th scope="row">&nbsp;</th>
-        <td colspan="3" id="bill">Administrator.</td>
+        <td colspan="3" id="bill"><img src="product/manag.png" width="363" height="66" /></td>
         <td>&nbsp;</td>
       </tr>
       <tr>
         <th scope="row">&nbsp;</th>
-        <td colspan="3" rowspan="3" bgcolor="#999999" id="list"><table width="100%" border="0" cellspacing="5" cellpadding="0">
-          <tr id="MenuList">
-            <td width="15%" align="center" valign="middle" id="list">&nbsp;</td>
-            <td width="29%" align="center" valign="middle"><div align="left" class="style3"><a href="reprot_buy.php">รายงานการสั่งซื้อสินค้า</a></div></td>
-            <td width="16%" align="center" valign="middle">&nbsp;</td>
-            <td width="40%" align="center" valign="middle"><div align="left" class="style3"><a href="reprot_Product.php">รายการสินค้าทั้งหมด</a></div></td>
+        <td colspan="3" rowspan="3" id="list"><table width="100%" border="1" cellspacing="0" cellpadding="0">
+          <tr>
+            <th scope="row"><table width="100%" border="0" align="center" cellpadding="0" cellspacing="5">
+              <tr id="MenuList">
+                <td width="10%" align="center" valign="middle" id="list2">&nbsp;</td>
+                <td width="39%" align="center" valign="middle"><div align="left" class="style3"></div></td>
+                <td width="10%" align="center" valign="middle">&nbsp;</td>
+                <td width="41%" align="center" valign="middle"><div align="left" class="style3"></div></td>
+              </tr>
+              <tr>
+                <td width="10%" align="center" valign="middle" id="list2"><img src="images/imges_admin_12.jpg" width="52" height="46" /></td>
+                <td width="39%" align="left" valign="middle"><span class="style3"><a href="reprot_buy.php">รายงานการสั่งซื้อสินค้า</a></span></td>
+                <td width="10%" align="center" valign="middle"><img src="images/imges_admin_03.jpg" width="45" height="44" /></td>
+                <td align="left" valign="middle"><span class="style3"><a href="reprot_Product.php">รายการสินค้าทั้งหมด</a></span></td>
+              </tr>
+              <tr id="MenuList">
+                <td align="center" valign="middle" id="list2"><img src="images/imges_admin_21.jpg" width="45" height="49" /></td>
+                <td align="center" valign="middle"><div align="left" class="style3"><a href="AlertTransfer.php">รายงานการจ่ายเงิน</a></div></td>
+                <td align="center" valign="middle"><img src="images/imges_admin_17.jpg" width="45" height="52" /></td>
+                <td align="center" valign="middle"><div align="left" class="style3"><a href="reprot.php">รายการซื้อขายทั้งหมด</a></div></td>
+              </tr>
+              <tr id="MenuList">
+                <td align="center" valign="middle" id="list2"><img src="images/imges_admin_04.jpg" width="52" height="44" /></td>
+                <td align="left" valign="middle"><span class="style3"><a href="report_member.php">รายชื่อสมาชิก</a></span></td>
+                <td align="center" valign="middle"><img src="images/imges_admin_22.jpg" width="53" height="49" /></td>
+                <td align="left" valign="middle"><span class="style3"><a href="Edit_product.php">แก้ไขสินค้า</a></span></td>
+              </tr>
+              <tr id="MenuList">
+                <td align="center" valign="middle" id="list2">&nbsp;</td>
+                <td align="left" valign="middle">&nbsp;</td>
+                <td align="center" valign="middle">&nbsp;</td>
+                <td align="left" valign="middle">&nbsp;</td>
+              </tr>
+            </table></th>
           </tr>
-          <tr id="MenuList">
-            <td align="center" valign="middle" id="list">&nbsp;</td>
-            <td align="center" valign="middle"><div align="left" class="style3"><a href="AlertTransfer.php">รายงานการจ่ายเงิน</a></div></td>
-            <td align="center" valign="middle">&nbsp;</td>
-            <td align="center" valign="middle"><div align="left" class="style3"><a href="reprot.php">รายการซื้อขายทั้งหมด</a></div></td>
-          </tr>
-          <tr id="MenuList">
-            <td align="center" valign="middle" id="list">&nbsp;</td>
-            <td align="left" valign="middle"><span class="style3"><a href="report_member.php">รายชื่อสมาชิก</a></span></td>
-            <td align="center" valign="middle">&nbsp;</td>
-            <td align="left" valign="middle"><span class="style3"><a href="Edit_product.php">แก้ไขสินค้า</a></span></td>
-          </tr>
-          <tr id="MenuList">
-            <td align="center" valign="middle" id="list">&nbsp;</td>
-            <td align="left" valign="middle">&nbsp;</td>
-            <td align="center" valign="middle">&nbsp;</td>
-            <td align="left" valign="middle">&nbsp;</td>
-          </tr>
-        </table>
-        <br /></td>
+        </table>          <br /></td>
         <td>&nbsp;</td>
       </tr>
       <tr>
