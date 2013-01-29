@@ -47,6 +47,7 @@ body {
 	font-weight: bold;
 	color: #03F;
 }
+.style3 {font-size: medium; }
 -->
 </style></head>
 
@@ -89,15 +90,33 @@ body {
       </tr>
       <tr>
         <th scope="row">&nbsp;</th>
-        <td colspan="3" rowspan="3" id="list"><br />
-
-	<table width="100%" border="1" cellspacing="0" cellpadding="0" bordercolor="#CCCCCC">
+        <td colspan="3" rowspan="3" bgcolor="#999999" id="list"><table width="100%" border="0" cellspacing="5" cellpadding="0">
           <tr id="MenuList">
-            <td width="29%" align="center" valign="middle" bgcolor="#CCCCCC" id="list">ชื่อลูกค้า</td>
-            <td width="31%" align="center" valign="middle" bgcolor="#CCCCCC">e-mail</td>
-            <td width="40%" align="center" valign="middle" bgcolor="#CCCCCC">เบอร์โทร</td>
-            </tr>
-        </table></td>
+            <td width="15%" align="center" valign="middle" id="list">&nbsp;</td>
+            <td width="29%" align="center" valign="middle"><div align="left" class="style3"><a href="reprot_buy.php">รายงานการสั่งซื้อสินค้า</a></div></td>
+            <td width="16%" align="center" valign="middle">&nbsp;</td>
+            <td width="40%" align="center" valign="middle"><div align="left" class="style3"><a href="reprot_Product.php">รายการสินค้าทั้งหมด</a></div></td>
+          </tr>
+          <tr id="MenuList">
+            <td align="center" valign="middle" id="list">&nbsp;</td>
+            <td align="center" valign="middle"><div align="left" class="style3"><a href="AlertTransfer.php">รายงานการจ่ายเงิน</a></div></td>
+            <td align="center" valign="middle">&nbsp;</td>
+            <td align="center" valign="middle"><div align="left" class="style3"><a href="reprot.php">รายการซื้อขายทั้งหมด</a></div></td>
+          </tr>
+          <tr id="MenuList">
+            <td align="center" valign="middle" id="list">&nbsp;</td>
+            <td align="left" valign="middle"><span class="style3"><a href="report_member.php">รายชื่อสมาชิก</a></span></td>
+            <td align="center" valign="middle">&nbsp;</td>
+            <td align="left" valign="middle"><span class="style3"><a href="Edit_product.php">แก้ไขสินค้า</a></span></td>
+          </tr>
+          <tr id="MenuList">
+            <td align="center" valign="middle" id="list">&nbsp;</td>
+            <td align="left" valign="middle">&nbsp;</td>
+            <td align="center" valign="middle">&nbsp;</td>
+            <td align="left" valign="middle">&nbsp;</td>
+          </tr>
+        </table>
+        <br /></td>
         <td>&nbsp;</td>
       </tr>
       <tr>
@@ -118,11 +137,7 @@ body {
           <th scope="row">&nbsp;</th>
         </tr>
         <tr>
-          <th scope="row"><form id="form3" name="form3" method="post" action="index.php">
-            <label>
-              <input type="submit" name="back" id="back" value="กลับหน้าหลัก" />
-            </label>
-          </form></th>
+          <th scope="row">&nbsp;</th>
         </tr>
         <tr>
           <th scope="row">&nbsp;</th>
@@ -131,7 +146,7 @@ body {
           <th scope="row">&nbsp;</th>
         </tr>
         <tr>
-          <th scope="row"><li class="Copyright"><span id="foot">Copyright 2013. Furniture Design. All Rights Reserved. </span></li>&nbsp;</th>
+          <th scope="row"><li class="Copyright"><span id="foot">Copyright 2013. Furniture Design. All Rights Reserved. </span></li> </th>
         </tr>
       </table>
     </div>
