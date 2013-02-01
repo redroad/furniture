@@ -173,16 +173,17 @@ box-shadow: #000 0 2px 10px;
 	</ul>
 	
 <div class="content">
-			<h1 class="title">Furniture Design.<a href="file:///C|/Users/Mookatay/Videos/TextCode/001.html">001</a></h1>
+			<h1 class="title">Furniture Design.</a></h1>
 			<div class="sibLockedMenu">
 			  <table width="171" border="0" cellspacing="0" cellpadding="0">
 			    <tr>
-			      <th scope="row"><table background="../FD/product/banner_rigth.png" width="158" height="34px" border="0" cellspacing="0" cellpadding="0">
+			      <th scope="row"><table background="product/banner_rigth.png" width="158" height="34px" border="0" cellspacing="0" cellpadding="0">
 			        <tr>
 			          <th align="center" valign="middle" scope="row">เข้าสู่ระบบ</th>
 		            </tr>
 			        </table></th>
-			      <th scope="row"><img src="../FD/product/bank.png" width="13" height="34" /></th>
+                    
+			      <th scope="row"><img src="product/bank.png" width="13" height="34" /></th>
 		        </tr>
 		      </table>
   </div>
