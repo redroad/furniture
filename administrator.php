@@ -2,167 +2,161 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>:: Furniture Desing ::</title>
+<title>Untitled Document</title>
+<style type="text/css">
+<!--
+.style3 {	font-size: medium;
+	text-align: left;
+}
+#MenuList {	font-weight: bold;
+}
+table {
+	font-size: 12px;
+}
+.style3 a {
+	font-size: 12px;
+}
+-->
+</style>
+<style type="text/css">
+  .round_image1 {-webkit-border-radius: 10px;
+-moz-border-radius: 10px;
+border-radius: 10px;
+-webkit-box-shadow: #000 0 2px 10px;
+-moz-box-shadow: #000 0 2px 10px;
+box-shadow: #000 0 2px 10px;
+}
+</style>
+<link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.8.1/build/cssfonts/cssfonts-min.css">
 <style type="text/css">
 <!--
 body {
-	margin-left: 0px;
-	margin-top: 0px;
-}
-#topmenu {
-	font-family: Tahoma, Geneva, sans-serif;
-	font-size: 12px;
-	color: #FFF;
-}
-#topmenu {
-	color: #FFF;
-	font-weight: bold;
-}
-#fb-root2 table {
-	color: #000;
-	text-align: center;
-	font-family: "ms Sans Serif";
-}
-#list {
-	color: #000;
-}
-#fb-root2 #list table tr #list {
-	text-align: center;
-}
-#foot {	text-align: center;
-}
-#foot {
-	font-size: 10px;
-}
-#fb-root2 #list #foot table tr th .Copyright #foot {
-	color: #666;
-}
-#fb-root2 #list table tr #list table {
-	font-size: 12px;
-}
-#MenuList {
-	font-weight: bold;
-}
-#bill {
-	font-weight: bold;
-	color: #03F;
-}
-.style3 {
-	font-size: medium;
-	text-align: left;
+	background-color: #999;
 }
 -->
 </style></head>
 
 <body>
-<div id="fb-root2" >
-  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+<div class="yui3-cssfonts" >
+<table width="550" height="200" border="0"  bgcolor="" align="center" cellpadding="0" cellspacing="0" class="round_image" >
+  <tr>
+    <th bgcolor="#FFFFFF" scope="row">
+    <table border="0" align="center" cellpadding="0" cellspacing="5">
+      <tr id="MenuList">
+        <td colspan="4" align="center" valign="middle" id="list2"><div align="left" class="style3"><img src="product/manag.png" width="363" height="66" align="absmiddle" /></div>
+          <div align="left" class="style3"></div></td>
+      </tr>
+      <tr>
+        <td width="10%" align="center" valign="middle" id="list2"><img src="images/imges_admin_12.jpg" width="52" height="46" /></td>
+        <td width="39%" align="left" valign="middle" style="font-family: 'ms Sans Serif'"><a href="reprot_buy.php">รายงานการสั่งซื้อสินค้า</a></td>
+        <td width="10%" align="center" valign="middle" style="font-family: 'ms Sans Serif'"><span class="cssfonts"><img src="images/imges_admin_03.jpg" width="45" height="44" /></span></td>
+        <td width="41%" align="left" valign="middle" style="font-family: 'ms Sans Serif'"><a href="reprot_Product.php">รายการสินค้าทั้งหมด</a></td>
+      </tr>
+      <tr id="MenuList">
+        <td align="center" valign="middle" id="list2"><span class="cssfonts"><img src="images/imges_admin_21.jpg" width="45" height="49" /></span></td>
+        <td align="left" valign="middle" style="font-family: 'ms Sans Serif'"><a href="AlertTransfer.php">รายงานการจ่ายเงิน</a></td>
+        <td align="center" valign="middle" style="font-family: 'ms Sans Serif'"><span class="cssfonts"><img src="images/imges_admin_17.jpg" width="45" height="52" /></span></td>
+        <td align="left" valign="middle" style="font-family: 'ms Sans Serif'"><a href="reprot.php">รายการซื้อขายทั้งหมด</a></td>
+      </tr>
+      <tr id="MenuList">
+        <td align="center" valign="middle" id="list2"><span class="cssfonts"><img src="images/imges_admin_04.jpg" width="52" height="44" /></span></td>
+        <td align="left" valign="middle" style="font-family: 'ms Sans Serif'"><a href="report_member.php">รายชื่อสมาชิก</a></td>
+        <td align="center" valign="middle" style="font-family: 'ms Sans Serif'"><span class="cssfonts"><img src="images/imges_admin_22.jpg" width="53" height="49" /></span></td>
+        <td align="left" valign="middle" style="font-family: 'ms Sans Serif'"><a href="Edit_product.php">แก้ไขสินค้า</a></td>
+      </tr>
+      <tr id="MenuList">
+        <td align="center" valign="middle" id="list2">&nbsp;</td>
+        <td align="left" valign="middle">&nbsp;</td>
+        <td align="center" valign="middle">&nbsp;</td>
+        <td align="left" valign="middle">&nbsp;</td>
+      </tr>
+    </table></th>
+  </tr>
+</table>
+
+</div> <br/><br />
+<div id="product" >
+  <table width="900px" border="0" align="center" cellpadding="0" cellspacing="0" >
     <tr>
-      <th align="right" valign="middle" bgcolor="#333333" scope="row">::&nbsp;&nbsp;</th>
-      <th align="left" valign="middle" bgcolor="#333333" id="topmenu" scope="row">หน้าแรก&nbsp;&nbsp;&nbsp;    วิธีสั่งซื้อ     &nbsp;&nbsp;การชำระเงิน&nbsp;&nbsp;     การจัดส่งสินค้า&nbsp;&nbsp;     เว็บบอร์ด     &nbsp;&nbsp;ติดต่อเรา  &nbsp;&nbsp;::</th>
-      <th align="right" valign="middle" bgcolor="#333333" scope="row"><table width="186" border="0" cellpadding="0" cellspacing="0">
-        <tr id="topmenu">
-          <th align="left" valign="top" bgcolor="#333333" scope="row" height="31px"><img src="product/login.gif" alt="" width="23" height="31" align="absmiddle" /></th>
-          <th align="left" valign="middle" bgcolor="#333333" scope="row">เข้าสู่ระบบ</th>
-          <th align="left" valign="top" bgcolor="#333333" scope="row"><img src="product/member.gif" alt="" width="22" height="31" align="absmiddle" /></th>
-          <th align="left" valign="middle" bgcolor="#333333" scope="row">สมัครสมาชิก</th>
+      <th colspan="0" align="left" valign="top" scope="row"><table width="900" border="0" cellpadding="0" cellspacing="0">
+        <tr>
+          <th colspan="0" align="left" valign="top" scope="row"><table width="900" border="0" cellpadding="0" cellspacing="0">
+            <tr>
+              <th colspan="0" align="left" valign="top" scope="row"> <table width="900" height="300" border="0" cellspacing="0" cellpadding="0" class="round_image" height="180"  bgcolor="#FFFFFF">
+              </th>
+            </tr>
+            <tr>
+              <th scope="row"><table width="900" border="0" cellpadding="0" cellspacing="0">
+                <tr>
+                  <th scope="row">&nbsp;</th>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td align="right" valign="middle"><img src="images/next.png" alt="" width="70" height="14" /></td>
+                </tr>
+                <tr>
+                  <th scope="row"><img src="product/001002.jpg" width="180" height="180" /></th>
+                  <th scope="row"><img src="product/001003.jpg" width="180" height="180" /></th>
+                  <th scope="row"><img src="product/001004.jpg" width="180" height="180" /></th>
+                  <th scope="row"><img src="product/001006.jpg" width="180" height="180" /></th>
+                  <th scope="row"><img src="product/001005.jpg" width="180" height="180" /></th>
+                </tr>
+                <tr>
+                  <th align="center" valign="middle" scope="row">ชื่อ</th>
+                  <th align="center" valign="middle" scope="row">ชื่อ</th>
+                  <th align="center" valign="middle" scope="row">ชื่อ</th>
+                  <th align="center" valign="middle" scope="row">ชื่อ</th>
+                  <th align="center" valign="middle" scope="row">ชื่อ</th>
+                </tr>
+                <tr>
+                  <th align="center" valign="middle" scope="row">ราคา</th>
+                  <th align="center" valign="middle" scope="row">ราคา</th>
+                  <th align="center" valign="middle" scope="row">ราคา</th>
+                  <th align="center" valign="middle" scope="row">ราคา</th>
+                  <th align="center" valign="middle" scope="row">ราคา</th>
+                </tr>
+                <tr>
+                  <th align="center" valign="middle" scope="row"><table width="120" border="0" align="center" cellpadding="0" cellspacing="2">
+                    <tr>
+                      <th width="14" bgcolor="#FF0000" scope="row">&nbsp;</th>
+                      <td width="106" align="center" valign="top" bgcolor="#212121">หยิบใส่ตระกร้า</td>
+                    </tr>
+                  </table></th>
+                  <th scope="row"><table width="120" border="0" cellpadding="0" cellspacing="2">
+                    <tr>
+                      <th bgcolor="#FF0000" scope="row">&nbsp;</th>
+                      <td align="center" valign="top" bgcolor="#212121">หยิบใส่ตระกร้า</td>
+                    </tr>
+                  </table></th>
+                  <th scope="row"><table width="120" border="0" cellpadding="0" cellspacing="2">
+                    <tr>
+                      <th bgcolor="#FF0000" scope="row">&nbsp;</th>
+                      <td align="center" valign="top" bgcolor="#212121">หยิบใส่ตระกร้า</td>
+                    </tr>
+                  </table></th>
+                  <th scope="row"><table width="120" border="0" cellpadding="0" cellspacing="2">
+                    <tr>
+                      <th bgcolor="#FF0000" scope="row">&nbsp;</th>
+                      <td align="center" valign="top" bgcolor="#212121">หยิบใส่ตระกร้า</td>
+                    </tr>
+                  </table></th>
+                  <th scope="row"><table width="120" border="0" cellpadding="0" cellspacing="2">
+                    <tr>
+                      <th bgcolor="#FF0000" scope="row">&nbsp;</th>
+                      <td align="center" valign="top" bgcolor="#212121">หยิบใส่ตระกร้า</td>
+                    </tr>
+                  </table></th>
+                </tr>
+              </table></th>
+            </tr>
+          </table></th>
         </tr>
       </table></th>
     </tr>
   </table>
-  <div id="list">
-    <table width="1000" border="0" align="center" cellpadding="0" cellspacing="0">
-      <tr>
-        <th width="258" scope="row">&nbsp;</th>
-        <td width="173">&nbsp;</td>
-        <td width="170">&nbsp;</td>
-        <td width="162">&nbsp;</td>
-        <td width="237">&nbsp;</td>
-      </tr>
-      <tr>
-        <th colspan="5" scope="row"><table width="100%" border="0" cellspacing="0" cellpadding="0">
-          <tr>
-            <th scope="row"><img src="product/Desing_logo.png" width="401" height="63" align="left" /></th>
-            </tr>
-        </table></th>
-      </tr>
-      <tr>
-        <th scope="row">&nbsp;</th>
-        <td colspan="3" id="bill"><img src="product/manag.png" width="363" height="66" /></td>
-        <td>&nbsp;</td>
-      </tr>
-      <tr>
-        <th scope="row">&nbsp;</th>
-        <td colspan="3" rowspan="3" id="list"><table width="100%" border="1" cellspacing="0" cellpadding="0">
-          <tr>
-            <th scope="row"><table width="100%" border="0" align="center" cellpadding="0" cellspacing="5">
-              <tr id="MenuList">
-                <td width="10%" align="center" valign="middle" id="list2">&nbsp;</td>
-                <td width="39%" align="center" valign="middle"><div align="left" class="style3"></div></td>
-                <td width="10%" align="center" valign="middle">&nbsp;</td>
-                <td width="41%" align="center" valign="middle"><div align="left" class="style3"></div></td>
-              </tr>
-              <tr>
-                <td width="10%" align="center" valign="middle" id="list2"><img src="images/imges_admin_12.jpg" width="52" height="46" /></td>
-                <td width="39%" align="left" valign="middle"><span class="style3"><a href="reprot_buy.php">รายงานการสั่งซื้อสินค้า</a></span></td>
-                <td width="10%" align="center" valign="middle"><img src="images/imges_admin_03.jpg" width="45" height="44" /></td>
-                <td align="left" valign="middle"><span class="style3"><a href="reprot_Product.php">รายการสินค้าทั้งหมด</a></span></td>
-              </tr>
-              <tr id="MenuList">
-                <td align="center" valign="middle" id="list2"><img src="images/imges_admin_21.jpg" width="45" height="49" /></td>
-                <td align="center" valign="middle"><div align="left" class="style3"><a href="AlertTransfer.php">รายงานการจ่ายเงิน</a></div></td>
-                <td align="center" valign="middle"><img src="images/imges_admin_17.jpg" width="45" height="52" /></td>
-                <td align="center" valign="middle"><div align="left" class="style3"><a href="reprot.php">รายการซื้อขายทั้งหมด</a></div></td>
-              </tr>
-              <tr id="MenuList">
-                <td align="center" valign="middle" id="list2"><img src="images/imges_admin_04.jpg" width="52" height="44" /></td>
-                <td align="left" valign="middle"><span class="style3"><a href="report_member.php">รายชื่อสมาชิก</a></span></td>
-                <td align="center" valign="middle"><img src="images/imges_admin_22.jpg" width="53" height="49" /></td>
-                <td align="left" valign="middle"><span class="style3"><a href="Edit_product.php">แก้ไขสินค้า</a></span></td>
-              </tr>
-              <tr id="MenuList">
-                <td align="center" valign="middle" id="list2">&nbsp;</td>
-                <td align="left" valign="middle">&nbsp;</td>
-                <td align="center" valign="middle">&nbsp;</td>
-                <td align="left" valign="middle">&nbsp;</td>
-              </tr>
-            </table></th>
-          </tr>
-        </table>          <br /></td>
-        <td>&nbsp;</td>
-      </tr>
-      <tr>
-        <th scope="row">&nbsp;</th>
-        <td align="left" valign="top">&nbsp;</td>
-      </tr>
-      <tr>
-        <th scope="row">&nbsp;</th>
-        <td align="left" valign="top">&nbsp;</td>
-      </tr>
-    </table>
-    <div id="foot">
-      <table width="900" border="0" align="center" cellpadding="0" cellspacing="0">
-        <tr>
-          <th scope="row"></th>
-        </tr>
-        <tr>
-          <th scope="row">&nbsp;</th>
-        </tr>
-        <tr>
-          <th scope="row">&nbsp;</th>
-        </tr>
-        <tr>
-          <th scope="row">&nbsp;</th>
-        </tr>
-        <tr>
-          <th scope="row">&nbsp;</th>
-        </tr>
-        <tr>
-          <th scope="row"><li class="Copyright"><span id="foot">Copyright 2013. Furniture Design. All Rights Reserved. </span></li> </th>
-        </tr>
-      </table>
-    </div>
-  </div>
+  </th>
+  </tr>
+  </table>
 </div>
 </body>
 </html>
