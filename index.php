@@ -393,7 +393,60 @@ box-shadow: #000 0 2px 10px;
         </table></th>
       </tr>
     </table>
-  </div>
+  </div> <br /><br />
+  <div>
+     <table width="800" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <th width="106" align="left" valign="middle" bgcolor="#FFFFFF" scope="row">&nbsp;</th>
+    <td width="626" align="left" valign="middle" bgcolor="#FFFFFF"><img src="images/bk.png" width="279" height="86" /></td>
+    <td width="68" align="left" valign="middle" bgcolor="#FFFFFF">&nbsp;</td>
+  </tr>
+  <tr>
+    <th align="left" valign="middle" bgcolor="#FFFFFF" scope="row">&nbsp;</th>
+    <td align="left" valign="middle" bgcolor="#FFFFFF">&nbsp;</td>
+    <td align="left" valign="middle" bgcolor="#FFFFFF">&nbsp;</td>
+  </tr>
+  <tr>
+    <th colspan="3" align="left" valign="middle" bgcolor="#FFFFFF" scope="row"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <th width="18%" align="center" valign="middle" bgcolor="#999999" scope="row">รหัสสินค้า</th>
+        <td width="24%" align="center" valign="middle" bgcolor="#999999">ชื่อสินค้า</td>
+        <td width="32%" align="center" valign="middle" bgcolor="#999999">&nbsp;</td>
+        <td width="12%" align="center" valign="middle" bgcolor="#999999">&nbsp;</td>
+        <td width="14%" align="center" valign="middle" bgcolor="#999999">จำนวน</td>
+      </tr>
+      <tr>
+        <th align="center" valign="middle" bgcolor="#CCCCCC" scope="row">&nbsp;</th>
+        <td align="center" valign="middle" bgcolor="#CCCCCC">&nbsp;</td>
+        <td align="center" valign="middle" bgcolor="#CCCCCC">&nbsp;</td>
+        <td align="center" valign="middle" bgcolor="#CCCCCC">&nbsp;</td>
+        <td align="center" valign="middle" bgcolor="#CCCCCC">&nbsp;</td>
+      </tr>
+      <tr>
+        <th align="center" valign="middle" bgcolor="#CCCCCC" scope="row">&nbsp;</th>
+        <td align="center" valign="middle" bgcolor="#CCCCCC">&nbsp;</td>
+        <td align="center" valign="middle" bgcolor="#CCCCCC">&nbsp;</td>
+        <td align="center" valign="middle" bgcolor="#CCCCCC">&nbsp;</td>
+        <td align="center" valign="middle" bgcolor="#CCCCCC">&nbsp;</td>
+      </tr>
+      <tr>
+        <th align="center" valign="middle" bgcolor="#CCCCCC" scope="row">&nbsp;</th>
+        <td align="center" valign="middle" bgcolor="#CCCCCC">&nbsp;</td>
+        <td align="center" valign="middle" bgcolor="#CCCCCC">&nbsp;</td>
+        <td align="center" valign="middle" bgcolor="#CCCCCC">&nbsp;</td>
+        <td align="center" valign="middle" bgcolor="#CCCCCC">&nbsp;</td>
+      </tr>
+      <tr>
+        <th align="center" valign="middle" bgcolor="#CCCCCC" scope="row">&nbsp;</th>
+        <td align="center" valign="middle" bgcolor="#CCCCCC">&nbsp;</td>
+        <td align="center" valign="middle" bgcolor="#CCCCCC">&nbsp;</td>
+        <td align="center" valign="middle" bgcolor="#CCCCCC">&nbsp;</td>
+        <td align="center" valign="middle" bgcolor="#CCCCCC">&nbsp;</td>
+      </tr>
+    </table></th>
+  </tr>
+</table>
+</div>
   		<br />
   		<br />
 <div align="center">Copyright 2013. Furniture Design. All Rights Reserved. </div>
