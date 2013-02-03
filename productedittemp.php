@@ -18,10 +18,11 @@ $rs = $db->query($sql);
     </head>
     <body>
         <div class="product-edit">
-            <img src="<?php echo "./product/".$rs[0]['img'] ?>" width="300"/>
-            
+            <img src="<?php echo "./product/" . $rs[0]['img'] ?>" width="300"/>
+
             <form action="./controller/productcontrol.php?act=update" enctype="multipart/form-data" method="post">
-                <input type="hidden" name="pid" value="<?php $rs[0]['id'] ?>">
+                <input type="hidden" name="pid" value="<?php echo $id ?>"/>
+                <input type="hidden" name="oldimg" value="<?php echo $rs[0]['img'] ?>"/>
                 <input type="file" name="file"/>
                 <input type="text" name="name" placeholder="name" value="<?php echo $rs[0]['product_name'] ?>"/>
                 <input type="text" name="detail" placeholder="detail" value="<?php echo $rs[0]['product_detail'] ?>"/>

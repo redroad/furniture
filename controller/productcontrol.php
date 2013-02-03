@@ -51,14 +51,15 @@ if ($act == "del") {
 }
 
 if ($act == "update") {
-    $id = isset($_REQUEST['id']) ? $_REQUEST['id'] : 0;
+    $id = isset($_REQUEST['pid']) ? $_REQUEST['pid'] : 0;
     $name = isset($_REQUEST['name']) ? $_REQUEST['name'] : "";
     $detail = isset($_REQUEST['detail']) ? $_REQUEST['detail'] : "";
     $price = isset($_REQUEST['price']) ? $_REQUEST['price'] : "";
     $type = isset($_REQUEST['type']) ? $_REQUEST['type'] : "";
-
-    if (isset($_FILES['file'])) {
+    $oldimg = isset($_REQUEST['oldimg']) ? $_REQUEST['oldimg'] : "";
+    if (!empty($_FILES['file']['name'])) {
         $path = "../product/";
+        unlink($path . $oldimg);
         $allowedExts = array("jpg", "jpeg", "gif", "png");
         $lists = explode(".", $_FILES["file"]["name"]);
         $extension = end($lists);
@@ -91,6 +92,7 @@ if ($act == "update") {
         }
     }
     $sql = "UPDATE `product` SET `product_name`='$name', `product_detail`='$detail', `price`=$price, `type_id`=$type WHERE  `id`=$id";
+    echo $sql;
     $db->exec($sql);
 }
 
