@@ -18,5 +18,6 @@ if ($act == "getproduct") {
     $rs = $db->query($sql);
     $result = array('pagecount' => $pagecount, 'page' => (int)$page, 'products' => $rs);
     echo json_encode($result);
+    
 }
 ?>
