@@ -19,9 +19,7 @@ $db->connect();
         <div class="product-add">
             <form action="./controller/productcontrol.php?act=add" enctype="multipart/form-data" method="post">
                 <input type="file" name="file"/>
-                <input type="text" name="name" placeholder="name"/>
-                <input type="text" name="detail" placeholder="detail"/>
-                <input type="text" name="price" placeholder="price"/>
+                <br>
                 <?php
                 $sql = "SELECT * FROM product_type";
                 $rs = $db->query($sql);
@@ -30,8 +28,14 @@ $db->connect();
                     echo "<option value='{$r['id']}'>{$r['type_name']}</option>";
                 }
                 echo "</select>";
-                ?>        
-                <input type="submit" value="ok"/>
+                ?>
+                <br>
+<input type="text" name="name" placeholder="name"/>
+<br>
+<input type="text" name="detail" placeholder="detail"/>
+<br>
+<input type="text" name="price" placeholder="price"/>
+<input type="submit" value="ok"/>
             </form>
         </div>
         =================================================

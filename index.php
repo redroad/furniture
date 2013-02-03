@@ -54,9 +54,9 @@ body {
 				height:69px;
 			}
 		body,td,th {
-	color: #FFF;
+	color: #000;
 	font-family: "ms Sans Serif";
-	font-size: 12px;
+	font-size: small;
 }
 #apDiv1 {
 	position:absolute;
@@ -152,6 +152,44 @@ box-shadow: #000 0 2px 10px;
 }
         .round_image tr th table tr th table {
 	font-size: small;
+}
+        .round_image3 {-webkit-border-radius: 10px;
+-moz-border-radius: 10px;
+border-radius: 10px;
+-webkit-box-shadow: #000 0 2px 10px;
+-moz-box-shadow: #000 0 2px 10px;
+box-shadow: #000 0 2px 10px;
+}
+        .round_image3 tr th table tr th table {
+	color: #000;
+	text-align: left;
+}
+        .round_image tr th table tr th table tr th {
+	font-size: small;
+}
+        .round_image31 {-webkit-border-radius: 10px;
+-moz-border-radius: 10px;
+border-radius: 10px;
+-webkit-box-shadow: #000 0 2px 10px;
+-moz-box-shadow: #000 0 2px 10px;
+box-shadow: #000 0 2px 10px;
+}
+        .round_image311 {-webkit-border-radius: 10px;
+-moz-border-radius: 10px;
+border-radius: 10px;
+-webkit-box-shadow: #000 0 2px 10px;
+-moz-box-shadow: #000 0 2px 10px;
+box-shadow: #000 0 2px 10px;
+}
+        .round_image312 {-webkit-border-radius: 10px;
+-moz-border-radius: 10px;
+border-radius: 10px;
+-webkit-box-shadow: #000 0 2px 10px;
+-moz-box-shadow: #000 0 2px 10px;
+box-shadow: #000 0 2px 10px;
+}
+        div {
+	color: #FFF;
 }
         </style>
         <style type=”text/css”>
@@ -416,46 +454,50 @@ box-shadow: #000 0 2px 10px;
             <td align="left" valign="middle">&nbsp;</td>
           </tr>
           <tr>
-            <th colspan="3" align="left" valign="middle" scope="row"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+            <th colspan="3" align="left" valign="top" scope="row"><table width="100%" border="0" cellspacing="3" cellpadding="0">
               <tr>
-                <th width="12%" align="center" valign="middle" bgcolor="#999999" scope="row">&nbsp;</th>
-                <th width="18%" align="center" valign="middle" bgcolor="#999999" scope="row">รหัสสินค้า</th>
-                <td width="29%" align="center" valign="middle" bgcolor="#999999">ชื่อสินค้า</td>
-                <td width="17%" align="center" valign="middle" bgcolor="#999999">&nbsp;</td>
-                <td width="10%" align="center" valign="middle" bgcolor="#999999">จำนวน</td>
-                <td width="14%" align="center" valign="middle" bgcolor="#999999">ราคา</td>
-              </tr>
-              <tr>
-                <th align="center" valign="middle" bgcolor="#CCCCCC" scope="row">&nbsp;</th>
-                <th align="left" valign="middle" bgcolor="#CCCCCC" scope="row">&nbsp;</th>
-                <td align="left" valign="middle" bgcolor="#CCCCCC">&nbsp;</td>
-                <td align="center" valign="middle" bgcolor="#CCCCCC">&nbsp;</td>
-                <td align="center" valign="middle" bgcolor="#CCCCCC">&nbsp;</td>
-                <td align="center" valign="middle" bgcolor="#CCCCCC">&nbsp;</td>
-              </tr>
-              <tr>
-                <th align="center" valign="middle" bgcolor="#CCCCCC" scope="row">&nbsp;</th>
-                <th align="left" valign="middle" bgcolor="#CCCCCC" scope="row">&nbsp;</th>
-                <td align="left" valign="middle" bgcolor="#CCCCCC">&nbsp;</td>
-                <td align="center" valign="middle" bgcolor="#CCCCCC">&nbsp;</td>
-                <td align="center" valign="middle" bgcolor="#CCCCCC">&nbsp;</td>
-                <td align="center" valign="middle" bgcolor="#CCCCCC">&nbsp;</td>
-              </tr>
-              <tr>
-                <th align="center" valign="middle" bgcolor="#CCCCCC" scope="row">&nbsp;</th>
-                <th align="left" valign="middle" bgcolor="#CCCCCC" scope="row">&nbsp;</th>
-                <td align="left" valign="middle" bgcolor="#CCCCCC">&nbsp;</td>
-                <td align="center" valign="middle" bgcolor="#CCCCCC">&nbsp;</td>
-                <td align="center" valign="middle" bgcolor="#CCCCCC">&nbsp;</td>
-                <td align="center" valign="middle" bgcolor="#CCCCCC">&nbsp;</td>
-              </tr>
-              <tr>
-                <th align="center" valign="middle" bgcolor="#CCCCCC" scope="row">&nbsp;</th>
-                <th align="left" valign="middle" bgcolor="#CCCCCC" scope="row">&nbsp;</th>
-                <td align="left" valign="middle" bgcolor="#CCCCCC">&nbsp;</td>
-                <td align="center" valign="middle" bgcolor="#CCCCCC">&nbsp;</td>
-                <td align="center" valign="middle" bgcolor="#CCCCCC">&nbsp;</td>
-                <td align="center" valign="middle" bgcolor="#CCCCCC">&nbsp;</td>
+                <th scope="row"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                  <tr>
+                    <th align="center" valign="middle" bgcolor="#999999" scope="row">&nbsp;</th>
+                    <th align="center" valign="middle" bgcolor="#999999" scope="row">รหัสสินค้า</th>
+                    <td align="center" valign="middle" bgcolor="#999999">ชื่อสินค้า</td>
+                    <td align="center" valign="middle" bgcolor="#999999">&nbsp;</td>
+                    <td align="center" valign="middle" bgcolor="#999999">จำนวน</td>
+                    <td align="center" valign="middle" bgcolor="#999999">ราคา</td>
+                  </tr>
+                  <tr>
+                    <th align="center" valign="middle" scope="row">&nbsp;</th>
+                    <th align="left" valign="middle" scope="row">&nbsp;</th>
+                    <td align="left" valign="middle">&nbsp;</td>
+                    <td align="center" valign="middle">&nbsp;</td>
+                    <td align="center" valign="middle">&nbsp;</td>
+                    <td align="center" valign="middle">&nbsp;</td>
+                  </tr>
+                  <tr>
+                    <th align="center" valign="middle" scope="row">&nbsp;</th>
+                    <th align="left" valign="middle" scope="row">&nbsp;</th>
+                    <td align="left" valign="middle">&nbsp;</td>
+                    <td align="center" valign="middle">&nbsp;</td>
+                    <td align="center" valign="middle">&nbsp;</td>
+                    <td align="center" valign="middle">&nbsp;</td>
+                  </tr>
+                  <tr>
+                    <th align="center" valign="middle" scope="row">&nbsp;</th>
+                    <th align="left" valign="middle" scope="row">&nbsp;</th>
+                    <td align="left" valign="middle">&nbsp;</td>
+                    <td align="center" valign="middle">&nbsp;</td>
+                    <td align="center" valign="middle">&nbsp;</td>
+                    <td align="center" valign="middle">&nbsp;</td>
+                  </tr>
+                  <tr>
+                    <th align="center" valign="middle" scope="row">&nbsp;</th>
+                    <th align="left" valign="middle" scope="row">&nbsp;</th>
+                    <td align="left" valign="middle">&nbsp;</td>
+                    <td align="center" valign="middle">&nbsp;</td>
+                    <td align="center" valign="middle">&nbsp;</td>
+                    <td align="center" valign="middle">&nbsp;</td>
+                  </tr>
+                </table></th>
               </tr>
             </table></th>
           </tr>
@@ -465,6 +507,175 @@ box-shadow: #000 0 2px 10px;
 </div>
   		<br />
   		<br />
+<div>
+          <table width="800px" height="450px" border="0" align="center" cellpadding="0" cellspacing="0"  bgcolor="#FFFFFF"  class="round_image3">
+            <tr>
+              <th align="center" valign="top" scope="row"><table width="800" border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                  <th align="left" valign="middle" scope="row">&nbsp;</th>
+                  <td align="center" valign="middle"><img src="images/P_s.png" width="407" height="86" /></td>
+                  <td align="left" valign="middle">&nbsp;</td>
+                </tr>
+                <tr>
+                  <th align="left" valign="middle" scope="row">&nbsp;</th>
+                  <td align="left" valign="middle">&nbsp;</td>
+                  <td align="left" valign="middle">&nbsp;</td>
+                </tr>
+                <tr>
+                  <th colspan="3" align="left" valign="middle" scope="row"><table width="100%" border="0" cellspacing="3" cellpadding="0">
+                    <tr>
+                      <th scope="row"><table width="100%" border="0" cellspacing="0" cellpadding="0" bordercolor="#CCCCCC">
+                        <tr id="MenuList">
+                          <td align="center" valign="middle" bgcolor="#999999" id="list">&nbsp;</td>
+                          <td align="left" valign="middle" bgcolor="#999999" id="list">รหัสสินค้า</td>
+                          <td align="left" valign="middle" bgcolor="#999999">ชื่อสินค้า</td>
+                          <td align="left" valign="middle" bgcolor="#999999">หมวดสินค้า</td>
+                          <td align="left" valign="middle" bgcolor="#999999">รายละเอียด</td>
+                          <td align="left" valign="middle" bgcolor="#999999">รูปภาพ</td>
+                          <td align="left" valign="middle" bgcolor="#999999">ราคา</td>
+                          <td align="center" valign="middle" bgcolor="#999999">สถานะ</td>
+                        </tr>
+                        <tr>
+                          <td align="left" valign="middle">&nbsp;</td>
+                          <td align="left" valign="middle">แมว</td>
+                          <td align="left" valign="middle">เก้าอี้ไม่ลายสก๊อต</td>
+                          <td align="left" valign="middle">เก้าอี้</td>
+                          <td align="left" valign="middle">ss</td>
+                          <td align="left" valign="middle">&nbsp;</td>
+                          <td align="left" valign="middle">2000</td>
+                          <td align="center" valign="middle"><img src="product/edit__01_01.gif" width="31" height="15" /><img src="product/edit__01_02.gif" width="31" height="15" /></td>
+                        </tr>
+                        <tr>
+                          <td align="left" valign="middle">&nbsp;</td>
+                          <td align="left" valign="middle">ช้าง</td>
+                          <td align="left" valign="middle">โต๊ไม้ปาเก้</td>
+                          <td align="left" valign="middle">โต๊ะ</td>
+                          <td align="left" valign="middle">dd</td>
+                          <td align="left" valign="middle">&nbsp;</td>
+                          <td align="left" valign="middle">5000</td>
+                          <td align="center" valign="middle"><img src="product/edit__01_01.gif" width="31" height="15" /><img src="product/edit__01_02.gif" width="31" height="15" /></td>
+                        </tr>
+                      </table></th>
+                    </tr>
+                  </table></th>
+                </tr>
+              </table>
+              <p>&nbsp;</p></th>
+            </tr>
+          </table>
+</div> <br /><br />
+  <div>
+	  <table width="800px" height="450px" border="0" align="center" cellpadding="0" cellspacing="0"  bgcolor="#FFFFFF"  class="round_image31">
+	    <tr>
+	      <th align="center" valign="top" scope="row"><table width="800" border="0" cellspacing="0" cellpadding="0">
+	        <tr>
+	          <th scope="row"><table width="800" border="0" cellspacing="0" cellpadding="0">
+	            <tr>
+	              <th align="left" valign="middle" scope="row">&nbsp;</th>
+	              <td align="center" valign="middle"><img src="images/p_report.png" width="407" height="86" /></td>
+	              <td align="left" valign="middle">&nbsp;</td>
+                </tr>
+	            <tr>
+	              <th align="left" valign="middle" scope="row">&nbsp;</th>
+	              <td align="left" valign="middle">&nbsp;</td>
+	              <td align="left" valign="middle">&nbsp;</td>
+                </tr>
+	            <tr>
+	              <th colspan="3" align="center" valign="top" scope="row"><table width="100%" border="0" cellspacing="3" cellpadding="0">
+	                <tr>
+	                  <th scope="row"><table width="100%" border="1" cellspacing="0" cellpadding="0" bordercolor="#CCCCCC">
+	                    <tr id="MenuList2">
+	                      <td align="center" valign="middle" bgcolor="#CCCCCC" id="list2">ชื่อลูกค้า</td>
+	                      <td align="center" valign="middle" bgcolor="#CCCCCC">วัน/เวลา ที่โอนเงิน</td>
+	                      <td align="center" valign="middle" bgcolor="#CCCCCC">รายการสินค้า</td>
+	                      <td align="center" valign="middle" bgcolor="#CCCCCC">จำนวนเงิน</td>
+	                      <td align="center" valign="middle" bgcolor="#CCCCCC">สถานะ</td>
+	                      </tr>
+	                    <tr>
+	                      <td align="left" valign="middle">แมว</td>
+	                      <td align="left" valign="middle">27/1/2553</td>
+	                      <td align="left" valign="middle">เก้าอี้ไม่ลายสก๊อต</td>
+	                      <td align="left" valign="middle">2000</td>
+	                      <td align="center" valign="middle"><form id="form1" method="post" action="">
+	                        <label>
+	                          <input type="submit" name="chk" id="chk" value="จ่ายแล้ว" />
+	                          </label>
+	                        </form></td>
+	                      </tr>
+	                    <tr>
+	                      <td align="left" valign="middle">ช้าง</td>
+	                      <td align="left" valign="middle">27/1/2553</td>
+	                      <td align="left" valign="middle">โต๊ไม้ปาเก้</td>
+	                      <td align="left" valign="middle">5000</td>
+	                      <td align="center" valign="middle"><form id="form2" name="form1" method="post" action="">
+	                        <label>
+	                          <input type="submit" name="chk2" id="chk2" value="จ่ายแล้ว" />
+	                          </label>
+	                        </form></td>
+	                      </tr>
+	                    </table></th>
+	                  </tr>
+	                </table></th>
+                </tr>
+	            </table></th>
+            </tr>
+	        </table>	        <p>&nbsp;</p></th>
+        </tr>
+    </table>
+  </div> <br/>
+  <div>
+    <table width="800px" height="450px" border="0" align="center" cellpadding="0" cellspacing="0"  bgcolor="#FFFFFF"  class="round_image312">
+      <tr>
+        <th align="center" valign="top" scope="row"><table width="800" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <th scope="row"><table width="800" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <th align="left" valign="middle" scope="row">&nbsp;</th>
+                <td align="center" valign="middle"><img src="images/P_member.png" width="407" height="86" /></td>
+                <td align="left" valign="middle">&nbsp;</td>
+              </tr>
+              <tr>
+                <th align="left" valign="middle" scope="row">&nbsp;</th>
+                <td align="left" valign="middle">&nbsp;</td>
+                <td align="left" valign="middle">&nbsp;</td>
+              </tr>
+              <tr>
+                <th colspan="3" align="center" valign="top" scope="row"><table width="100%" border="0" cellspacing="3" cellpadding="0">
+                  <tr>
+                    <th scope="row"><table width="100%" border="0" cellspacing="0" cellpadding="0" >
+                      <tr id="MenuList3">
+                        <td width="30%" align="center" valign="middle" bgcolor="#999999" id="list3">ชื่อลูกค้า</td>
+                        <td width="42%" align="center" valign="middle" bgcolor="#999999">e-mail</td>
+                        <td width="28%" align="center" valign="middle" bgcolor="#999999">เบอร์โทร</td>
+                      </tr>
+                      <tr>
+                        <td align="left" valign="middle">แมว</td>
+                        <td align="left" valign="middle">aa@aa.com</td>
+                        <td align="left" valign="middle">0821574784</td>
+                      </tr>
+                      <tr>
+                        <td align="left" valign="middle">ช้าง</td>
+                        <td align="left" valign="middle">bb@aa.com</td>
+                        <td align="left" valign="middle">0821574899</td>
+                      </tr>
+                    </table></th>
+                  </tr>
+                </table></th>
+              </tr>
+            </table></th>
+          </tr>
+        </table>
+          <p>&nbsp;</p></th>
+      </tr>
+    </table>
+</div>
+  <br />
+  <br />
+
+ <br /><br />
+  <br />
+  
+
 <div align="center">Copyright 2013. Furniture Design. All Rights Reserved. </div>
     <script type="text/javascript">
             $(function() {
