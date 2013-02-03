@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <link rel="stylesheet" type="text/css" media="screen" href="css/stylesheet.css" />
 
-<title>Untitled Document</title>
+<title>:: FD :: Admin</title>
 <style type="text/css">
 <!--
 .style3 {	font-size: medium;
@@ -33,6 +33,8 @@ box-shadow: #000 0 2px 10px;
 <style type="text/css">
 <!--
 body {
+	background:#333 url(bg.jpg) repeat top left;
+	background-attachment:fixed;
 	background-color: #999;
 	background-image: url(bg.jpg);
 }
@@ -43,10 +45,18 @@ border-radius: 10px;
 -moz-box-shadow: #000 0 2px 10px;
 box-shadow: #000 0 2px 10px;
 }
+.round_image2 {-webkit-border-radius: 10px;
+-moz-border-radius: 10px;
+border-radius: 10px;
+-webkit-box-shadow: #000 0 2px 10px;
+-moz-box-shadow: #000 0 2px 10px;
+box-shadow: #000 0 2px 10px;
+}
 -->
 </style></head>
 
 <body leftmargin="0" topmargin="0">
+
 
 <div>
         <ul class="menu" >
@@ -60,76 +70,69 @@ box-shadow: #000 0 2px 10px;
           <li><a href="#"><span>::</span></a></li>
 		
 	</ul>
-</div>
+</div><br /><br />
 <div>
-  <p>&nbsp;</p>
-  <table width="800px" height="450px"  bgcolor="#FFFFFF" border="0" align="center" cellpadding="0" cellspacing="0"  class="round_image">
+  <table width="800px" height="450px" border="0" align="center" cellpadding="0" cellspacing="0"  bgcolor="#FFFFFF"  class="round_image2">
     <tr>
       <th align="center" valign="top" scope="row"><table width="800" border="0" cellspacing="0" cellpadding="0">
         <tr>
-          <th align="left" valign="middle" scope="row">&nbsp;</th>
-          <td align="center" valign="bottom"><img src="images/bk.png" width="279" height="86" /></td>
-          <td align="left" valign="middle">&nbsp;</td>
-        </tr>
-        <tr>
-          <th align="left" valign="middle" scope="row">&nbsp;</th>
-          <td align="left" valign="middle">&nbsp;</td>
-          <td align="left" valign="middle">&nbsp;</td>
-        </tr>
-        <tr>
-          <th colspan="3" align="left" valign="top" scope="row"><table width="100%" border="0" cellspacing="3" cellpadding="0">
+          <th scope="row"><table width="800" border="0" cellspacing="0" cellpadding="0">
             <tr>
-              <th scope="row"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <th align="left" valign="middle" scope="row">&nbsp;</th>
+              <td align="center" valign="middle"><img src="product/manag.png" width="363" height="94" /></td>
+              <td align="left" valign="middle">&nbsp;</td>
+            </tr>
+            <tr>
+              <th align="left" valign="middle" scope="row">&nbsp;</th>
+              <td align="left" valign="middle">&nbsp;</td>
+              <td align="left" valign="middle">&nbsp;</td>
+            </tr>
+            <tr>
+              <th colspan="3" align="center" valign="top" scope="row"><table width="100%" border="0" cellspacing="3" cellpadding="0">
                 <tr>
-                  <th align="center" valign="middle" bgcolor="#999999" scope="row">&nbsp;</th>
-                  <th align="center" valign="middle" bgcolor="#999999" scope="row">รหัสสินค้า</th>
-                  <td align="center" valign="middle" bgcolor="#999999">ชื่อสินค้า</td>
-                  <td align="center" valign="middle" bgcolor="#999999">&nbsp;</td>
-                  <td align="center" valign="middle" bgcolor="#999999">จำนวน</td>
-                  <td align="center" valign="middle" bgcolor="#999999">ราคา</td>
-                </tr>
-                <tr>
-                  <th align="center" valign="middle" scope="row">&nbsp;</th>
-                  <th align="left" valign="middle" scope="row">&nbsp;</th>
-                  <td align="left" valign="middle">&nbsp;</td>
-                  <td align="center" valign="middle">&nbsp;</td>
-                  <td align="center" valign="middle">&nbsp;</td>
-                  <td align="center" valign="middle">&nbsp;</td>
-                </tr>
-                <tr>
-                  <th align="center" valign="middle" scope="row">&nbsp;</th>
-                  <th align="left" valign="middle" scope="row">&nbsp;</th>
-                  <td align="left" valign="middle">&nbsp;</td>
-                  <td align="center" valign="middle">&nbsp;</td>
-                  <td align="center" valign="middle">&nbsp;</td>
-                  <td align="center" valign="middle">&nbsp;</td>
-                </tr>
-                <tr>
-                  <th align="center" valign="middle" scope="row">&nbsp;</th>
-                  <th align="left" valign="middle" scope="row">&nbsp;</th>
-                  <td align="left" valign="middle">&nbsp;</td>
-                  <td align="center" valign="middle">&nbsp;</td>
-                  <td align="center" valign="middle">&nbsp;</td>
-                  <td align="center" valign="middle">&nbsp;</td>
-                </tr>
-                <tr>
-                  <th align="center" valign="middle" scope="row">&nbsp;</th>
-                  <th align="left" valign="middle" scope="row">&nbsp;</th>
-                  <td align="left" valign="middle">&nbsp;</td>
-                  <td align="center" valign="middle">&nbsp;</td>
-                  <td align="center" valign="middle">&nbsp;</td>
-                  <td align="center" valign="middle">&nbsp;</td>
+                  <th scope="row"><table width="100%" border="0" cellpadding="0" cellspacing="5">
+                    <tr id="MenuList4">
+                      <td colspan="4" align="center" valign="middle" id="list4"><div align="left" class="style3"></div>
+                        <div align="left" class="style3"></div></td>
+                    </tr>
+                    <tr>
+                      <td width="24%" align="right" valign="middle" id="list4"><img src="images/imges_admin_12.jpg" width="52" height="46" /></td>
+                      <td width="32%" align="left" valign="middle" class="style3">รายงานการสั่งซื้อสินค้า</td>
+                      <td width="7%" align="right" valign="top" class="style3"><img src="images/imges_admin_03.jpg" width="45" height="44" /></td>
+                      <td width="37%" align="left" valign="middle" class="style3">รายการสินค้าทั้งหมด</td>
+                    </tr>
+                    <tr id="MenuList4">
+                      <td align="right" valign="middle" id="list4"><img src="images/imges_admin_21.jpg" width="45" height="49" /></td>
+                      <td align="left" valign="middle" class="style3">รายงานการจ่ายเงิน</td>
+                      <td align="right" valign="top" class="style3"><img src="images/imges_admin_17.jpg" width="45" height="52" /></td>
+                      <td align="left" valign="middle" class="style3">รายการซื้อขายทั้งหมด</td>
+                    </tr>
+                    <tr id="MenuList4">
+                      <td align="right" valign="middle" id="list4"><img src="images/imges_admin_04.jpg" width="52" height="44" /></td>
+                      <td align="left" valign="middle" class="style3">รายชื่อสมาชิก</td>
+                      <td align="right" valign="top" class="style3"><img src="images/add.png" alt="" width="45" height="44" /></td>
+                      <td align="left" valign="middle" class="style3">เพิ่มสินค้า/แก้ไขสินค้า</td>
+                    </tr>
+                    <tr id="MenuList4">
+                      <td align="right" valign="middle" id="list4">&nbsp;</td>
+                      <td align="left" valign="middle">&nbsp;</td>
+                      <td align="right" valign="middle">&nbsp;</td>
+                      <td align="left" valign="middle">&nbsp;</td>
+                    </tr>
+                  </table></th>
                 </tr>
               </table></th>
             </tr>
           </table></th>
         </tr>
-      </table></th>
+      </table>
+        <p>&nbsp;</p></th>
     </tr>
   </table>
 </div>
+<br /><br />
 <div>
-          <table width="800px" height="450px" border="0" align="center" cellpadding="0" cellspacing="0"  bgcolor="#FFFFFF"  class="round_image3">
+          <table width="800px" height="450px" border="0" align="center" cellpadding="0" cellspacing="0"  bgcolor="#FFFFFF"  class="round_image">
             <tr>
               <th align="center" valign="top" scope="row"><table width="800" border="0" cellspacing="0" cellpadding="0">
                 <tr>
@@ -186,7 +189,7 @@ box-shadow: #000 0 2px 10px;
           </table>
 </div> <br /><br />
   <div>
-	  <table width="800px" height="450px" border="0" align="center" cellpadding="0" cellspacing="0"  bgcolor="#FFFFFF"  class="round_image31">
+	  <table width="800px" height="450px" border="0" align="center" cellpadding="0" cellspacing="0"  bgcolor="#FFFFFF"  class="round_image">
 	    <tr>
 	      <th align="center" valign="top" scope="row"><table width="800" border="0" cellspacing="0" cellpadding="0">
 	        <tr>
@@ -243,9 +246,9 @@ box-shadow: #000 0 2px 10px;
 	        </table>	        <p>&nbsp;</p></th>
         </tr>
     </table>
-  </div> <br/>
+  </div> <br /><br />
   <div>
-    <table width="800px" height="450px" border="0" align="center" cellpadding="0" cellspacing="0"  bgcolor="#FFFFFF"  class="round_image312">
+    <table width="800px" height="450px" border="0" align="center" cellpadding="0" cellspacing="0"  bgcolor="#FFFFFF"  class="round_image">
       <tr>
         <th align="center" valign="top" scope="row"><table width="800" border="0" cellspacing="0" cellpadding="0">
           <tr>
@@ -292,65 +295,6 @@ box-shadow: #000 0 2px 10px;
 </div>
   <br />
   <br />
- <div>
-    <table width="800px" height="450px" border="0" align="center" cellpadding="0" cellspacing="0"  bgcolor="#FFFFFF"  class="round_image3121">
-      <tr>
-        <th align="center" valign="top" scope="row"><table width="800" border="0" cellspacing="0" cellpadding="0">
-          <tr>
-            <th scope="row"><table width="800" border="0" cellspacing="0" cellpadding="0">
-              <tr>
-                <th align="left" valign="middle" scope="row">&nbsp;</th>
-                <td align="center" valign="middle"><img src="product/manag.png" width="363" height="94" /></td>
-                <td align="left" valign="middle">&nbsp;</td>
-              </tr>
-              <tr>
-                <th align="left" valign="middle" scope="row">&nbsp;</th>
-                <td align="left" valign="middle">&nbsp;</td>
-                <td align="left" valign="middle">&nbsp;</td>
-              </tr>
-              <tr>
-                <th colspan="3" align="center" valign="top" scope="row"><table width="100%" border="0" cellspacing="3" cellpadding="0">
-                  <tr>
-                    <th scope="row"><table width="100%" border="0" cellpadding="0" cellspacing="5">
-                      <tr id="MenuList4">
-                        <td colspan="4" align="center" valign="middle" id="list4"><div align="left" class="style3"></div>
-                          <div align="left" class="style3"></div></td>
-                      </tr>
-                      <tr>
-                        <td width="24%" align="right" valign="middle" id="list4"><img src="images/imges_admin_12.jpg" width="52" height="46" /></td>
-                        <td width="32%" align="left" valign="middle" class="style3">รายงานการสั่งซื้อสินค้า</td>
-                        <td width="7%" align="right" valign="top" class="style3"><img src="images/imges_admin_03.jpg" width="45" height="44" /></td>
-                        <td width="37%" align="left" valign="middle" class="style3">รายการสินค้าทั้งหมด</td>
-                      </tr>
-                      <tr id="MenuList4">
-                        <td align="right" valign="middle" id="list4"><img src="images/imges_admin_21.jpg" width="45" height="49" /></td>
-                        <td align="left" valign="middle" class="style3">รายงานการจ่ายเงิน</td>
-                        <td align="right" valign="top" class="style3"><img src="images/imges_admin_17.jpg" width="45" height="52" /></td>
-                        <td align="left" valign="middle" class="style3">รายการซื้อขายทั้งหมด</td>
-                      </tr>
-                      <tr id="MenuList4">
-                        <td align="right" valign="middle" id="list4"><img src="images/imges_admin_04.jpg" width="52" height="44" /></td>
-                        <td align="left" valign="middle" class="style3">รายชื่อสมาชิก</td>
-                        <td align="right" valign="top" class="style3"><img src="images/add.png" alt="" width="45" height="44" /></td>
-                        <td align="left" valign="middle" class="style3">เพิ่มสินค้า/แก้ไขสินค้า</td>
-                      </tr>
-                      <tr id="MenuList4">
-                        <td align="right" valign="middle" id="list4">&nbsp;</td>
-                        <td align="left" valign="middle">&nbsp;</td>
-                        <td align="right" valign="middle">&nbsp;</td>
-                        <td align="left" valign="middle">&nbsp;</td>
-                      </tr>
-                    </table></th>
-                  </tr>
-                </table></th>
-              </tr>
-            </table></th>
-          </tr>
-        </table>
-          <p>&nbsp;</p></th>
-      </tr>
-    </table>
-</div>
  <br /><br />
 
 </body>
