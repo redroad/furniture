@@ -5,12 +5,15 @@ $(document).ready(function(){
         var number = $("select[name=take"+pid+"]").val();
         list += pid+","+number+"|";
         $(this).hide(300);
-       // alert(list);
+    // alert(list);
     });
     $(".clear").on("click",function(){
         list = "";
         $('.takebtn').show(300);
     });
+    $("#view-cart").on("click",function(){
+        
+        });
 });
 
 
