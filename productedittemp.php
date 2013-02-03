@@ -20,7 +20,7 @@ $rs = $db->query($sql);
         <div class="product-edit">
             <img src="<?php echo "./product/".$rs[0]['img'] ?>" width="300"/>
             
-            <form action="./controller/productcontrol.php?act=add" enctype="multipart/form-data" method="post">
+            <form action="./controller/productcontrol.php?act=update" enctype="multipart/form-data" method="post">
                 <input type="hidden" name="pid" value="<?php $rs[0]['id'] ?>">
                 <input type="file" name="file"/>
                 <input type="text" name="name" placeholder="name" value="<?php echo $rs[0]['product_name'] ?>"/>
