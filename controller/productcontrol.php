@@ -42,5 +42,12 @@ if ($act == 'add') {
         echo "Invalid file";
     }
 }
+if ($act == "del") {
+    $id = $_REQUEST['id'];
+    $img = $_REQUEST['img'];
+    unlink("../product/" . $mg);
+    $sql = "DELETE FROM `product` WHERE  `id`=$id";
+    $db->exec($sql);    
+}
 $db->close();
 ?>
