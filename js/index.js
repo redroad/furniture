@@ -6,29 +6,7 @@ var max =0;
 $(document).ready(function(){
 
     $(function(){
-        $.post("../controller/productjson.php",{
-            act:"getproduct",
-            type:type,
-            page:page
-        },function(res){  
-            console.log(res);
-            $('.product-img').html('');
-            $('.product-name').html('');
-            $('.product-price').html('');
-            $('.product-take').html('');      
-            max = res.pagecount;
-            $.each(res.products,function(key,val){               
-                var img = "<th scope=\"row\"><img src=\"./product/"+val.img+"\" width=\"180\" height=\"180\" /></th>";
-                var name = "<th align=\"left\" valign=\"middle\" scope=\"row\">"+val.product_name+"</th>";
-                var price = "<th align=\"left\" valign=\"middle\" scope=\"row\">"+val.price+" บาท</th>";
-                var btn = "<th align=\"left\" valign=\"middle\" scope=\"row\"><input type='button' value='Add to cart' class='take' pid='"+val.id+"' /></th>";
-                $(".product-img").append(img);
-                $(".product-name").append(name);
-                $(".product-price").append(price);
-                $(".product-take").append(btn);               
-                
-            });
-        });
+        getproduct();
     });
     
     $(".backbtn").live("click",function(){
@@ -40,28 +18,7 @@ $(document).ready(function(){
             page--;
             next--;
             back--;
-            $.post("../controller/productjson.php",{
-                act:"getproduct",
-                type:type,
-                page:page
-            },function(res){  
-                console.log(res);
-                $('.product-img').html('');
-                $('.product-name').html('');
-                $('.product-price').html('');
-                $('.product-take').html('');            
-                $.each(res.products,function(key,val){               
-                    var img = "<th scope=\"row\"><img src=\"./product/"+val.img+"\" width=\"180\" height=\"180\" /></th>";
-                    var name = "<th align=\"left\" valign=\"middle\" scope=\"row\">"+val.product_name+"</th>";
-                    var price = "<th align=\"left\" valign=\"middle\" scope=\"row\">"+val.price+" บาท</th>";
-                    var btn = "<th align=\"left\" valign=\"middle\" scope=\"row\"><input type='button' value='Add to cart' class='take' pid='"+val.id+"' /></th>";
-                    $(".product-img").append(img);
-                    $(".product-name").append(name);
-                    $(".product-price").append(price);
-                    $(".product-take").append(btn);               
-                
-                });
-            });
+            getproduct();
         }
     });
     
@@ -73,62 +30,45 @@ $(document).ready(function(){
             page++;
             next++;
             back++;
-            $.post("../controller/productjson.php",{
-                act:"getproduct",
-                type:type,
-                page:page
-            },function(res){  
-                console.log(res);
-                $('.product-img').html('');
-                $('.product-name').html('');
-                $('.product-price').html('');
-                $('.product-take').html('');            
-                $.each(res.products,function(key,val){               
-                    var img = "<th scope=\"row\"><img src=\"./product/"+val.img+"\" width=\"180\" height=\"180\" /></th>";
-                    var name = "<th align=\"left\" valign=\"middle\" scope=\"row\">"+val.product_name+"</th>";
-                    var price = "<th align=\"left\" valign=\"middle\" scope=\"row\">"+val.price+" บาท</th>";
-                    var btn = "<th align=\"left\" valign=\"middle\" scope=\"row\"><input type='button' value='Add to cart' class='take' pid='"+val.id+"' /></th>";
-                    $(".product-img").append(img);
-                    $(".product-name").append(name);
-                    $(".product-price").append(price);
-                    $(".product-take").append(btn);               
-                
-                });
-            });
+            getproduct();
         }
     });
     
     $(".product-type-select").live("click",function(){
         var tid = $(this).attr("tid");
-        alert(tid);
+        // alert(tid);
         type = tid;
         back = 0;
         page = 1;
         next = 2;
-        $.post("../controller/productjson.php",{
-            act:"getproduct",
-            type:type,
-            page:page
-        },function(res){  
-            console.log(res);
-            $('.product-img').html('');
-            $('.product-name').html('');
-            $('.product-price').html('');
-            $('.product-take').html('');      
-            max = res.pagecount;
-            $.each(res.products,function(key,val){               
-                var img = "<th scope=\"row\"><img src=\"./product/"+val.img+"\" width=\"180\" height=\"180\" /></th>";
-                var name = "<th align=\"left\" valign=\"middle\" scope=\"row\">"+val.product_name+"</th>";
-                var price = "<th align=\"left\" valign=\"middle\" scope=\"row\">"+val.price+" บาท</th>";
-                var btn = "<th align=\"left\" valign=\"middle\" scope=\"row\"><input type='button' value='Add to cart' class='take' pid='"+val.id+"' /></th>";
-                $(".product-img").append(img);
-                $(".product-name").append(name);
-                $(".product-price").append(price);
-                $(".product-take").append(btn);               
-                
-            });
-        });
+        getproduct();
        
     });
     
 });
+
+function getproduct(){
+    $.post("../controller/productjson.php",{
+        act:"getproduct",
+        type:type,
+        page:page
+    },function(res){  
+        console.log(res);
+        $('.product-img').html('');
+        $('.product-name').html('');
+        $('.product-price').html('');
+        $('.product-take').html('');      
+        max = res.pagecount;
+        $.each(res.products,function(key,val){               
+            var img = "<th scope=\"row\"><img src=\"./product/"+val.img+"\" width=\"180\" height=\"180\" /></th>";
+            var name = "<th align=\"left\" valign=\"middle\" scope=\"row\">"+val.product_name+"</th>";
+            var price = "<th align=\"left\" valign=\"middle\" scope=\"row\">"+val.price+" บาท</th>";
+            var btn = "<th align=\"left\" valign=\"middle\" scope=\"row\"><input type='button' value='Add to cart' class='take' pid='"+val.id+"' /></th>";
+            $(".product-img").append(img);
+            $(".product-name").append(name);
+            $(".product-price").append(price);
+            $(".product-take").append(btn);               
+                
+        });
+    });
+}

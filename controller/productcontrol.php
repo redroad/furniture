@@ -43,7 +43,7 @@ if ($act == 'add') {
     } else {
         echo "Invalid file";
     }
-    header('Location:../producttemp.php');
+    @header('Location:../producttemp.php');
 }
 if ($act == "del") {
     $id = $_REQUEST['id'];
@@ -51,7 +51,7 @@ if ($act == "del") {
     unlink("../product/" . $img);
     $sql = "DELETE FROM `product` WHERE  `id`=$id";
     $db->exec($sql);
-    header('Location:../producttemp.php');
+    @header('Location:../producttemp.php');
 }
 
 if ($act == "update") {
