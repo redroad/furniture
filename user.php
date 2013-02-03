@@ -45,6 +45,13 @@ border-radius: 10px;
 -moz-box-shadow: #000 0 2px 10px;
 box-shadow: #000 0 2px 10px;
 }
+.round_image2 {-webkit-border-radius: 10px;
+-moz-border-radius: 10px;
+border-radius: 10px;
+-webkit-box-shadow: #000 0 2px 10px;
+-moz-box-shadow: #000 0 2px 10px;
+box-shadow: #000 0 2px 10px;
+}
 -->
 </style></head>
 
@@ -54,10 +61,9 @@ box-shadow: #000 0 2px 10px;
         <ul class="menu" >
        
           <li><a href="#" class="active"><span>::</span></a></li>
-          <li><a href="contact" target="_parent"><span>ติดต่อเรา  </span></a></li>
-		  <li><a href="shipping" target="_parent"><span>การจัดส่งสินค้า</span></a></li>
-          <li><a href="payment.php" target="_parent"><span>การชำระเงิน</span></a></li>
-          <li><a href="howbuy" target="_parent"><span>วิธีการสั่งซื้อ</span></a></li>
+			<li><a href="#" target="_parent"><span>ยืนยันการโอนเงิน</span></a></li>
+          <li><a href="#" target="_parent"><span>รายการซื้อขายทั้งหมด</span></a></li>
+          <li><a href="#" target="_parent"><span>ตระกร้าสินค้า</span></a></li>
           <li><a href="index.php" target="_parent"><span>หน้าแรก</span></a></li>
           <li><a href="#"><span>::</span></a></li>
 		
@@ -83,12 +89,12 @@ box-shadow: #000 0 2px 10px;
             <tr>
               <th scope="row"><table width="100%" border="0" cellspacing="0" cellpadding="0">
                 <tr>
-                  <th align="center" valign="middle" bgcolor="#999999" scope="row">&nbsp;</th>
-                  <th align="center" valign="middle" bgcolor="#999999" scope="row">รหัสสินค้า</th>
-                  <td align="center" valign="middle" bgcolor="#999999">ชื่อสินค้า</td>
-                  <td align="center" valign="middle" bgcolor="#999999">&nbsp;</td>
-                  <td align="center" valign="middle" bgcolor="#999999">จำนวน</td>
-                  <td align="center" valign="middle" bgcolor="#999999">ราคา</td>
+                  <th align="center" valign="middle" bgcolor="#CCCCCC" scope="row">&nbsp;</th>
+                  <th align="center" valign="middle" bgcolor="#CCCCCC" scope="row">รหัสสินค้า</th>
+                  <td align="center" valign="middle" bgcolor="#CCCCCC">ชื่อสินค้า</td>
+                  <td align="center" valign="middle" bgcolor="#CCCCCC">&nbsp;</td>
+                  <td align="center" valign="middle" bgcolor="#CCCCCC">จำนวน</td>
+                  <td align="center" valign="middle" bgcolor="#CCCCCC">ราคา</td>
                 </tr>
                 <tr>
                   <th align="center" valign="middle" scope="row">&nbsp;</th>
@@ -191,7 +197,71 @@ box-shadow: #000 0 2px 10px;
   </div> <br /><br />
   <br />
   <br />
- <br /><br />
-
-</body>
+<div>
+    <table width="800px" height="450px" border="0" align="center" cellpadding="0" cellspacing="0"  bgcolor="#FFFFFF"  class="round_image2">
+      <tr>
+        <th align="center" valign="top" scope="row"><table width="800" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <th scope="row"><table width="800" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <th rowspan="2" align="left" valign="middle" scope="row">&nbsp;</th>
+                <td align="center" valign="middle">&nbsp;</td>
+                <td rowspan="2" align="left" valign="middle">&nbsp;</td>
+              </tr>
+              <tr>
+                <td align="center" valign="middle"><img src="images/transfer.png" width="407" height="86" /></td>
+              </tr>
+              <tr>
+                <th align="left" valign="middle" scope="row">&nbsp;</th>
+                <td align="left" valign="middle">&nbsp;</td>
+                <td align="left" valign="middle">&nbsp;</td>
+              </tr>
+              <tr>
+                <th colspan="3" align="center" valign="top" scope="row"><table width="100%" border="0" cellspacing="5" cellpadding="0">
+                  <tr>
+                    <th width="30%" scope="row">&nbsp;</th>
+                    <td width="17%">หมายเลขอ้างอิง</td>
+                    <td width="53%"><form id="form3" name="form3" method="post" action="">
+                      <input type="text" name="textfield" id="textfield" />
+                    </form></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">&nbsp;</th>
+                    <td>วันที่ชำระเงิน</td>
+                    <td><input type="text" name="textfield3" id="textfield3" /></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">&nbsp;</th>
+                    <td>เวลาที่ชำระเงิน</td>
+                    <td><input type="text" name="textfield4" id="textfield4" /></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">&nbsp;</th>
+                    <td>จำนวนเงิน</td>
+                    <td><input type="text" name="textfield5" id="textfield5" /></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">&nbsp;</th>
+                    <td>&nbsp;</td>
+                    <td><form id="form5" name="form5" method="post" action="">
+                      <input type="submit" name="button" id="button" value="ยืนยันการชำระเงิน" style=" width:150px; height:50px;" />
+                    </form></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">&nbsp;</th>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                  </tr>
+                </table></th>
+              </tr>
+            </table></th>
+          </tr>
+        </table>
+          <p><img src="product/mm.jpg" width="216" height="233" /></p></th>
+      </tr>
+    </table>
+</div>
+<br /><br />
+<div align="center"> <font color="#FFFFFF">Copyright 2013. Furniture Design. All Rights Reserved. </font></div>
+<br /><br />
 </html>
