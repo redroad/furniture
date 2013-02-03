@@ -51,6 +51,7 @@ if ($act == "del") {
     unlink("../product/" . $img);
     $sql = "DELETE FROM `product` WHERE  `id`=$id";
     $db->exec($sql);
+    header('Location:../producttemp.php');
 }
 
 if ($act == "update") {
@@ -97,7 +98,6 @@ if ($act == "update") {
     $sql = "UPDATE `product` SET `product_name`='$name', `product_detail`='$detail', `price`=$price, `type_id`=$type WHERE  `id`=$id";
     echo $sql;
     $db->exec($sql);
-   
 }
 
 $db->close();
