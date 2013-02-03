@@ -45,7 +45,7 @@ if ($act == 'add') {
 if ($act == "del") {
     $id = $_REQUEST['id'];
     $img = $_REQUEST['img'];
-    unlink("../product/" . $mg);
+    unlink("../product/" . $img);
     $sql = "DELETE FROM `product` WHERE  `id`=$id";
     $db->exec($sql);    
 }

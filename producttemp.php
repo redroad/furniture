@@ -58,7 +58,7 @@ $db->connect();
                         echo "<td>{$r['product_detail']}</td>";
                         echo "<td>{$r['price']}</td>";
                         echo "<td>{$r['img']}</td>";
-                        echo "<td><a href=#>Edit</a> | <a href='./controller/productcontrol.php?id'>Delete</a></td>";
+                        echo "<td><a href=#>Edit</a> | <a href='./controller/productcontrol.php?act=del&id={$r['id']}&img={$r['img']}'>Delete</a></td>";
                         echo "</tr>";
                     }
                     ?>
