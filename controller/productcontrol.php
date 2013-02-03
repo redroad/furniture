@@ -9,6 +9,8 @@ if ($act == 'add') {
     $detail = isset($_REQUEST['detail']) ? $_REQUEST['detail'] : "";
     $price = isset($_REQUEST['price']) ? $_REQUEST['price'] : "";
     $type = isset($_REQUEST['type']) ? $_REQUEST['type'] : "";
+    $available = isset($_REQUEST['available']) ? $_REQUEST['available'] : 0;
+
 
     $path = "../product/";
     $allowedExts = array("jpg", "jpeg", "gif", "png");
@@ -33,7 +35,7 @@ if ($act == 'add') {
                 echo $_FILES["file"]["name"] . " already exists. ";
             } else {
                 move_uploaded_file($_FILES["file"]["tmp_name"], $path . $_FILES["file"]["name"]);
-                $sql = "INSERT INTO `product` (`product_name`, `product_detail`, `price`, `img`, `type_id`) VALUES ('$name', '$detail', $price, '{$_FILES['file']['name']}', $type);";
+                $sql = "INSERT INTO `product` (`product_name`, `product_detail`, `price`, `img`, `type_id`,`available`) VALUES ('$name', '$detail', $price, '{$_FILES['file']['name']}', $type,$available);";
                 $db->exec($sql);
                 echo "Stored in: " . $path . $_FILES["file"]["name"];
             }
@@ -41,6 +43,7 @@ if ($act == 'add') {
     } else {
         echo "Invalid file";
     }
+    header('Location:../producttemp.php');
 }
 if ($act == "del") {
     $id = $_REQUEST['id'];
@@ -94,6 +97,7 @@ if ($act == "update") {
     $sql = "UPDATE `product` SET `product_name`='$name', `product_detail`='$detail', `price`=$price, `type_id`=$type WHERE  `id`=$id";
     echo $sql;
     $db->exec($sql);
+   
 }
 
 $db->close();
