@@ -18,9 +18,11 @@ $rs = $db->query($sql);
     </head>
     <body>
         <div class="product-edit">
-            <img src="<?php echo "./product/".$rs[0]['img'] ?>" width="300"/>
+            <img src="<?php echo "./product/".$rs[0]['img'] ?>" width="180" height="180"/>
             
             <form action="./controller/productcontrol.php?act=update" enctype="multipart/form-data" method="post">
+              <p>&nbsp;              </p>
+              <p>
                 <input type="hidden" name="pid" value="<?php $rs[0]['id'] ?>">
                 <input type="file" name="file"/>
                 <input type="text" name="name" placeholder="name" value="<?php echo $rs[0]['product_name'] ?>"/>
@@ -40,6 +42,7 @@ $rs = $db->query($sql);
                 echo "</select>";
                 ?>        
                 <input type="submit" value="ok"/>
+              </p>
             </form>
         </div>
         <?php
