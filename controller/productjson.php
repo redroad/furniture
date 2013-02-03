@@ -8,8 +8,6 @@ $act = isset($_REQUEST['act']) ? $_REQUEST['act'] : "";
 if ($act == "getproduct") {
     $type = isset($_REQUEST['type']) ? $_REQUEST['type'] : 1;
     $page = isset($_REQUEST['page']) ? $_REQUEST['page'] : 1;
-
-
     $sql = "SELECT count(id) FROM product WHERE type_id=$type";
     $max = 5;
     $all = $db->query($sql);
