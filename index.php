@@ -418,36 +418,41 @@ box-shadow: #000 0 2px 10px;
           <tr>
             <th colspan="3" align="left" valign="middle" scope="row"><table width="100%" border="0" cellspacing="0" cellpadding="0">
               <tr>
-                <th align="center" valign="middle" bgcolor="#999999" scope="row">รหัสสินค้า</th>
-                <td align="center" valign="middle" bgcolor="#999999">ชื่อสินค้า</td>
-                <td align="center" valign="middle" bgcolor="#999999">&nbsp;</td>
-                <td align="center" valign="middle" bgcolor="#999999">จำนวน</td>
-                <td align="center" valign="middle" bgcolor="#999999">ราคา</td>
+                <th width="12%" align="center" valign="middle" bgcolor="#999999" scope="row">&nbsp;</th>
+                <th width="18%" align="center" valign="middle" bgcolor="#999999" scope="row">รหัสสินค้า</th>
+                <td width="29%" align="center" valign="middle" bgcolor="#999999">ชื่อสินค้า</td>
+                <td width="17%" align="center" valign="middle" bgcolor="#999999">&nbsp;</td>
+                <td width="10%" align="center" valign="middle" bgcolor="#999999">จำนวน</td>
+                <td width="14%" align="center" valign="middle" bgcolor="#999999">ราคา</td>
               </tr>
               <tr>
                 <th align="center" valign="middle" bgcolor="#CCCCCC" scope="row">&nbsp;</th>
-                <td align="center" valign="middle" bgcolor="#CCCCCC">&nbsp;</td>
-                <td align="center" valign="middle" bgcolor="#CCCCCC">&nbsp;</td>
-                <td align="center" valign="middle" bgcolor="#CCCCCC">&nbsp;</td>
-                <td align="center" valign="middle" bgcolor="#CCCCCC">&nbsp;</td>
-              </tr>
-              <tr>
-                <th align="center" valign="middle" bgcolor="#CCCCCC" scope="row">&nbsp;</th>
-                <td align="center" valign="middle" bgcolor="#CCCCCC">&nbsp;</td>
+                <th align="left" valign="middle" bgcolor="#CCCCCC" scope="row">&nbsp;</th>
+                <td align="left" valign="middle" bgcolor="#CCCCCC">&nbsp;</td>
                 <td align="center" valign="middle" bgcolor="#CCCCCC">&nbsp;</td>
                 <td align="center" valign="middle" bgcolor="#CCCCCC">&nbsp;</td>
                 <td align="center" valign="middle" bgcolor="#CCCCCC">&nbsp;</td>
               </tr>
               <tr>
                 <th align="center" valign="middle" bgcolor="#CCCCCC" scope="row">&nbsp;</th>
-                <td align="center" valign="middle" bgcolor="#CCCCCC">&nbsp;</td>
+                <th align="left" valign="middle" bgcolor="#CCCCCC" scope="row">&nbsp;</th>
+                <td align="left" valign="middle" bgcolor="#CCCCCC">&nbsp;</td>
                 <td align="center" valign="middle" bgcolor="#CCCCCC">&nbsp;</td>
                 <td align="center" valign="middle" bgcolor="#CCCCCC">&nbsp;</td>
                 <td align="center" valign="middle" bgcolor="#CCCCCC">&nbsp;</td>
               </tr>
               <tr>
                 <th align="center" valign="middle" bgcolor="#CCCCCC" scope="row">&nbsp;</th>
+                <th align="left" valign="middle" bgcolor="#CCCCCC" scope="row">&nbsp;</th>
+                <td align="left" valign="middle" bgcolor="#CCCCCC">&nbsp;</td>
                 <td align="center" valign="middle" bgcolor="#CCCCCC">&nbsp;</td>
+                <td align="center" valign="middle" bgcolor="#CCCCCC">&nbsp;</td>
+                <td align="center" valign="middle" bgcolor="#CCCCCC">&nbsp;</td>
+              </tr>
+              <tr>
+                <th align="center" valign="middle" bgcolor="#CCCCCC" scope="row">&nbsp;</th>
+                <th align="left" valign="middle" bgcolor="#CCCCCC" scope="row">&nbsp;</th>
+                <td align="left" valign="middle" bgcolor="#CCCCCC">&nbsp;</td>
                 <td align="center" valign="middle" bgcolor="#CCCCCC">&nbsp;</td>
                 <td align="center" valign="middle" bgcolor="#CCCCCC">&nbsp;</td>
                 <td align="center" valign="middle" bgcolor="#CCCCCC">&nbsp;</td>
