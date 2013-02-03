@@ -62,10 +62,8 @@ box-shadow: #000 0 2px 10px;
         <ul class="menu" >
        
           <li><a href="#" class="active"><span>::</span></a></li>
-          <li><a href="contact" target="_parent"><span>ติดต่อเรา  </span></a></li>
-		  <li><a href="shipping" target="_parent"><span>การจัดส่งสินค้า</span></a></li>
-          <li><a href="payment.php" target="_parent"><span>การชำระเงิน</span></a></li>
-          <li><a href="howbuy" target="_parent"><span>วิธีการสั่งซื้อ</span></a></li>
+      
+          <li><a href="howbuy" target="_parent"><span>Management</span></a></li>
           <li><a href="index.php" target="_parent"><span>หน้าแรก</span></a></li>
           <li><a href="#"><span>::</span></a></li>
 		
@@ -78,50 +76,40 @@ box-shadow: #000 0 2px 10px;
         <tr>
           <th scope="row"><table width="800" border="0" cellspacing="0" cellpadding="0">
             <tr>
-              <th align="left" valign="middle" scope="row">&nbsp;</th>
-              <td align="center" valign="middle"><img src="product/manag.png" width="363" height="94" /></td>
-              <td align="left" valign="middle">&nbsp;</td>
-            </tr>
-            <tr>
-              <th align="left" valign="middle" scope="row">&nbsp;</th>
-              <td align="left" valign="middle">&nbsp;</td>
-              <td align="left" valign="middle">&nbsp;</td>
-            </tr>
-            <tr>
-              <th colspan="3" align="center" valign="top" scope="row"><table width="100%" border="0" cellspacing="3" cellpadding="0">
+              <th align="center" valign="top" scope="row"><table width="100%" border="0" cellspacing="3" cellpadding="0">
                 <tr>
-                  <th scope="row"><table width="100%" border="0" cellpadding="0" cellspacing="5">
+                  <th height="219" scope="row"><table width="100%" border="0" cellpadding="0" cellspacing="5">
                     <tr id="MenuList4">
-                      <td colspan="4" align="center" valign="middle" id="list4"><div align="left" class="style3"></div>
+                      <td colspan="4" align="center" valign="middle" id="list4"><div align="left" class="style3"><center><img src="product/manag.png" width="363" height="94"  /></center></div>
                         <div align="left" class="style3"></div></td>
-                    </tr>
+                      </tr>
                     <tr>
                       <td width="24%" align="right" valign="middle" id="list4"><img src="images/imges_admin_12.jpg" width="52" height="46" /></td>
-                      <td width="32%" align="left" valign="middle" class="style3">รายงานการสั่งซื้อสินค้า</td>
+                      <td width="32%" align="left" valign="middle" class="style3">รายการซื้อขายทั้งหมด</td>
                       <td width="7%" align="right" valign="top" class="style3"><img src="images/imges_admin_03.jpg" width="45" height="44" /></td>
                       <td width="37%" align="left" valign="middle" class="style3">รายการสินค้าทั้งหมด</td>
-                    </tr>
+                      </tr>
                     <tr id="MenuList4">
                       <td align="right" valign="middle" id="list4"><img src="images/imges_admin_21.jpg" width="45" height="49" /></td>
                       <td align="left" valign="middle" class="style3">รายงานการจ่ายเงิน</td>
-                      <td align="right" valign="top" class="style3"><img src="images/imges_admin_17.jpg" width="45" height="52" /></td>
-                      <td align="left" valign="middle" class="style3">รายการซื้อขายทั้งหมด</td>
-                    </tr>
-                    <tr id="MenuList4">
-                      <td align="right" valign="middle" id="list4"><img src="images/imges_admin_04.jpg" width="52" height="44" /></td>
-                      <td align="left" valign="middle" class="style3">รายชื่อสมาชิก</td>
                       <td align="right" valign="top" class="style3"><img src="images/add.png" alt="" width="45" height="44" /></td>
                       <td align="left" valign="middle" class="style3">เพิ่มสินค้า/แก้ไขสินค้า</td>
-                    </tr>
+                      </tr>
+                    <tr id="MenuList4">
+                      <td align="right" valign="middle" id="list4"><img src="images/imges_admin_04.jpg" width="52" height="44" /></td>
+                      <td align="left" valign="middle" class="style3">สมาชิก</td>
+                      <td align="right" valign="top" class="style3">&nbsp;</td>
+                      <td align="left" valign="middle" class="style3">&nbsp;</td>
+                      </tr>
                     <tr id="MenuList4">
                       <td align="right" valign="middle" id="list4">&nbsp;</td>
                       <td align="left" valign="middle">&nbsp;</td>
                       <td align="right" valign="middle">&nbsp;</td>
                       <td align="left" valign="middle">&nbsp;</td>
-                    </tr>
-                  </table></th>
-                </tr>
-              </table></th>
+                      </tr>
+                    </table></th>
+                  </tr>
+                </table></th>
             </tr>
           </table></th>
         </tr>
