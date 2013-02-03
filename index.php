@@ -214,7 +214,7 @@ box-shadow: #000 0 2px 10px;
 
 <body>
 
-          </div>
+<div>
         <ul class="menu" >
        
           <li><a href="#" class="active"><span>::</span></a></li>
@@ -226,7 +226,7 @@ box-shadow: #000 0 2px 10px;
           <li><a href="#"><span>::</span></a></li>
 		
 	</ul>
-	
+</div>
 <div class="content">
 			<h1 class="title">Furniture Design.</a></h1>
 			<div class="sibLockedMenu">
@@ -312,7 +312,63 @@ box-shadow: #000 0 2px 10px;
 <!-- The JavaScript -->
         <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
 		<script type="text/javascript" src="jquery.easing.1.3.js"></script>
-<div id="product" >
+    <script type="text/javascript">
+            $(function() {
+				/**
+				* for each menu element, on mouseenter, 
+				* we enlarge the image, and show both sdt_active span and 
+				* sdt_wrap span. If the element has a sub menu (sdt_box),
+				* then we slide it - if the element is the last one in the menu
+				* we slide it to the left, otherwise to the right
+				*/
+                $('#sdt_menu > li').bind('mouseenter',function(){
+					var $elem = $(this);
+					$elem.find('img')
+						 .stop(true)
+						 .animate({
+							'width':'170px',
+							'height':'170px',
+							'left':'0px'
+						 },400,'easeOutBack')
+						 .andSelf()
+						 .find('.sdt_wrap')
+					     .stop(true)
+						 .animate({'top':'140px'},500,'easeOutBack')
+						 .andSelf()
+						 .find('.sdt_active')
+					     .stop(true)
+						 .animate({'height':'170px'},300,function(){
+						var $sub_menu = $elem.find('.sdt_box');
+						if($sub_menu.length){
+							var left = '170px';
+							if($elem.parent().children().length == $elem.index()+1)
+								left = '-170px';
+							$sub_menu.show().animate({'left':left},200);
+						}	
+					});
+				}).bind('mouseleave',function(){
+					var $elem = $(this);
+					var $sub_menu = $elem.find('.sdt_box');
+					if($sub_menu.length)
+						$sub_menu.hide().css('left','0px');
+					
+					$elem.find('.sdt_active')
+						 .stop(true)
+						 .animate({'height':'0px'},300)
+						 .andSelf().find('img')
+						 .stop(true)
+						 .animate({
+							'width':'0px',
+							'height':'0px',
+							'left':'85px'},400)
+						 .andSelf()
+						 .find('.sdt_wrap')
+						 .stop(true)
+						 .animate({'top':'25px'},500);
+				});
+            });
+        </script>
+        <div id="product" >
       <table width="900px" border="0" align="center" cellpadding="0" cellspacing="0" >
         <tr>
           <th colspan="0" align="left" valign="top" scope="row"><table width="900" border="0" cellpadding="0" cellspacing="0">
@@ -448,359 +504,13 @@ box-shadow: #000 0 2px 10px;
         </table></th>
       </tr>
     </table>
-  </div> <br /><br />
-  <div>
-    <table width="800px" height="450px"  bgcolor="#FFFFFF" border="0" align="center" cellpadding="0" cellspacing="0"  class="round_image">
-      <tr>
-        <th align="center" valign="top" scope="row"><table width="800" border="0" cellspacing="0" cellpadding="0">
-          <tr>
-            <th align="left" valign="middle" scope="row">&nbsp;</th>
-            <td align="center" valign="bottom"><img src="images/bk.png" width="279" height="86" /></td>
-            <td align="left" valign="middle">&nbsp;</td>
-          </tr>
-          <tr>
-            <th align="left" valign="middle" scope="row">&nbsp;</th>
-            <td align="left" valign="middle">&nbsp;</td>
-            <td align="left" valign="middle">&nbsp;</td>
-          </tr>
-          <tr>
-            <th colspan="3" align="left" valign="top" scope="row"><table width="100%" border="0" cellspacing="3" cellpadding="0">
-              <tr>
-                <th scope="row"><table width="100%" border="0" cellspacing="0" cellpadding="0">
-                  <tr>
-                    <th align="center" valign="middle" bgcolor="#999999" scope="row">&nbsp;</th>
-                    <th align="center" valign="middle" bgcolor="#999999" scope="row">รหัสสินค้า</th>
-                    <td align="center" valign="middle" bgcolor="#999999">ชื่อสินค้า</td>
-                    <td align="center" valign="middle" bgcolor="#999999">&nbsp;</td>
-                    <td align="center" valign="middle" bgcolor="#999999">จำนวน</td>
-                    <td align="center" valign="middle" bgcolor="#999999">ราคา</td>
-                  </tr>
-                  <tr>
-                    <th align="center" valign="middle" scope="row">&nbsp;</th>
-                    <th align="left" valign="middle" scope="row">&nbsp;</th>
-                    <td align="left" valign="middle">&nbsp;</td>
-                    <td align="center" valign="middle">&nbsp;</td>
-                    <td align="center" valign="middle">&nbsp;</td>
-                    <td align="center" valign="middle">&nbsp;</td>
-                  </tr>
-                  <tr>
-                    <th align="center" valign="middle" scope="row">&nbsp;</th>
-                    <th align="left" valign="middle" scope="row">&nbsp;</th>
-                    <td align="left" valign="middle">&nbsp;</td>
-                    <td align="center" valign="middle">&nbsp;</td>
-                    <td align="center" valign="middle">&nbsp;</td>
-                    <td align="center" valign="middle">&nbsp;</td>
-                  </tr>
-                  <tr>
-                    <th align="center" valign="middle" scope="row">&nbsp;</th>
-                    <th align="left" valign="middle" scope="row">&nbsp;</th>
-                    <td align="left" valign="middle">&nbsp;</td>
-                    <td align="center" valign="middle">&nbsp;</td>
-                    <td align="center" valign="middle">&nbsp;</td>
-                    <td align="center" valign="middle">&nbsp;</td>
-                  </tr>
-                  <tr>
-                    <th align="center" valign="middle" scope="row">&nbsp;</th>
-                    <th align="left" valign="middle" scope="row">&nbsp;</th>
-                    <td align="left" valign="middle">&nbsp;</td>
-                    <td align="center" valign="middle">&nbsp;</td>
-                    <td align="center" valign="middle">&nbsp;</td>
-                    <td align="center" valign="middle">&nbsp;</td>
-                  </tr>
-                </table></th>
-              </tr>
-            </table></th>
-          </tr>
-        </table></th>
-      </tr>
-    </table>
-</div>
+  </div>
+<br />
   		<br />
-  		<br />
-<div>
-          <table width="800px" height="450px" border="0" align="center" cellpadding="0" cellspacing="0"  bgcolor="#FFFFFF"  class="round_image3">
-            <tr>
-              <th align="center" valign="top" scope="row"><table width="800" border="0" cellspacing="0" cellpadding="0">
-                <tr>
-                  <th align="left" valign="middle" scope="row">&nbsp;</th>
-                  <td align="center" valign="middle"><img src="images/P_s.png" width="407" height="86" /></td>
-                  <td align="left" valign="middle">&nbsp;</td>
-                </tr>
-                <tr>
-                  <th align="left" valign="middle" scope="row">&nbsp;</th>
-                  <td align="left" valign="middle">&nbsp;</td>
-                  <td align="left" valign="middle">&nbsp;</td>
-                </tr>
-                <tr>
-                  <th colspan="3" align="left" valign="middle" scope="row"><table width="100%" border="0" cellspacing="3" cellpadding="0">
-                    <tr>
-                      <th scope="row"><table width="100%" border="0" cellspacing="0" cellpadding="0" bordercolor="#CCCCCC">
-                        <tr id="MenuList">
-                          <td align="center" valign="middle" bgcolor="#999999" id="list">&nbsp;</td>
-                          <td align="left" valign="middle" bgcolor="#999999" id="list">รหัสสินค้า</td>
-                          <td align="left" valign="middle" bgcolor="#999999">ชื่อสินค้า</td>
-                          <td align="left" valign="middle" bgcolor="#999999">หมวดสินค้า</td>
-                          <td align="left" valign="middle" bgcolor="#999999">รายละเอียด</td>
-                          <td align="left" valign="middle" bgcolor="#999999">รูปภาพ</td>
-                          <td align="left" valign="middle" bgcolor="#999999">ราคา</td>
-                          <td align="center" valign="middle" bgcolor="#999999">สถานะ</td>
-                        </tr>
-                        <tr>
-                          <td align="left" valign="middle">&nbsp;</td>
-                          <td align="left" valign="middle">แมว</td>
-                          <td align="left" valign="middle">เก้าอี้ไม่ลายสก๊อต</td>
-                          <td align="left" valign="middle">เก้าอี้</td>
-                          <td align="left" valign="middle">ss</td>
-                          <td align="left" valign="middle">&nbsp;</td>
-                          <td align="left" valign="middle">2000</td>
-                          <td align="center" valign="middle"><img src="product/edit__01_01.gif" width="31" height="15" /><img src="product/edit__01_02.gif" width="31" height="15" /></td>
-                        </tr>
-                        <tr>
-                          <td align="left" valign="middle">&nbsp;</td>
-                          <td align="left" valign="middle">ช้าง</td>
-                          <td align="left" valign="middle">โต๊ไม้ปาเก้</td>
-                          <td align="left" valign="middle">โต๊ะ</td>
-                          <td align="left" valign="middle">dd</td>
-                          <td align="left" valign="middle">&nbsp;</td>
-                          <td align="left" valign="middle">5000</td>
-                          <td align="center" valign="middle"><img src="product/edit__01_01.gif" width="31" height="15" /><img src="product/edit__01_02.gif" width="31" height="15" /></td>
-                        </tr>
-                      </table></th>
-                    </tr>
-                  </table></th>
-                </tr>
-              </table>
-              <p>&nbsp;</p></th>
-            </tr>
-          </table>
-</div> <br /><br />
-  <div>
-	  <table width="800px" height="450px" border="0" align="center" cellpadding="0" cellspacing="0"  bgcolor="#FFFFFF"  class="round_image31">
-	    <tr>
-	      <th align="center" valign="top" scope="row"><table width="800" border="0" cellspacing="0" cellpadding="0">
-	        <tr>
-	          <th scope="row"><table width="800" border="0" cellspacing="0" cellpadding="0">
-	            <tr>
-	              <th align="left" valign="middle" scope="row">&nbsp;</th>
-	              <td align="center" valign="middle"><img src="images/p_report.png" width="407" height="86" /></td>
-	              <td align="left" valign="middle">&nbsp;</td>
-                </tr>
-	            <tr>
-	              <th align="left" valign="middle" scope="row">&nbsp;</th>
-	              <td align="left" valign="middle">&nbsp;</td>
-	              <td align="left" valign="middle">&nbsp;</td>
-                </tr>
-	            <tr>
-	              <th colspan="3" align="center" valign="top" scope="row"><table width="100%" border="0" cellspacing="3" cellpadding="0">
-	                <tr>
-	                  <th scope="row"><table width="100%" border="1" cellspacing="0" cellpadding="0" bordercolor="#CCCCCC">
-	                    <tr id="MenuList2">
-	                      <td align="center" valign="middle" bgcolor="#CCCCCC" id="list2">ชื่อลูกค้า</td>
-	                      <td align="center" valign="middle" bgcolor="#CCCCCC">วัน/เวลา ที่โอนเงิน</td>
-	                      <td align="center" valign="middle" bgcolor="#CCCCCC">รายการสินค้า</td>
-	                      <td align="center" valign="middle" bgcolor="#CCCCCC">จำนวนเงิน</td>
-	                      <td align="center" valign="middle" bgcolor="#CCCCCC">สถานะ</td>
-	                      </tr>
-	                    <tr>
-	                      <td align="left" valign="middle">แมว</td>
-	                      <td align="left" valign="middle">27/1/2553</td>
-	                      <td align="left" valign="middle">เก้าอี้ไม่ลายสก๊อต</td>
-	                      <td align="left" valign="middle">2000</td>
-	                      <td align="center" valign="middle"><form id="form1" method="post" action="">
-	                        <label>
-	                          <input type="submit" name="chk" id="chk" value="จ่ายแล้ว" />
-	                          </label>
-	                        </form></td>
-	                      </tr>
-	                    <tr>
-	                      <td align="left" valign="middle">ช้าง</td>
-	                      <td align="left" valign="middle">27/1/2553</td>
-	                      <td align="left" valign="middle">โต๊ไม้ปาเก้</td>
-	                      <td align="left" valign="middle">5000</td>
-	                      <td align="center" valign="middle"><form id="form2" name="form1" method="post" action="">
-	                        <label>
-	                          <input type="submit" name="chk2" id="chk2" value="จ่ายแล้ว" />
-	                          </label>
-	                        </form></td>
-	                      </tr>
-	                    </table></th>
-	                  </tr>
-	                </table></th>
-                </tr>
-	            </table></th>
-            </tr>
-	        </table>	        <p>&nbsp;</p></th>
-        </tr>
-    </table>
-  </div> <br/>
-  <div>
-    <table width="800px" height="450px" border="0" align="center" cellpadding="0" cellspacing="0"  bgcolor="#FFFFFF"  class="round_image312">
-      <tr>
-        <th align="center" valign="top" scope="row"><table width="800" border="0" cellspacing="0" cellpadding="0">
-          <tr>
-            <th scope="row"><table width="800" border="0" cellspacing="0" cellpadding="0">
-              <tr>
-                <th align="left" valign="middle" scope="row">&nbsp;</th>
-                <td align="center" valign="middle"><img src="images/P_member.png" width="407" height="86" /></td>
-                <td align="left" valign="middle">&nbsp;</td>
-              </tr>
-              <tr>
-                <th align="left" valign="middle" scope="row">&nbsp;</th>
-                <td align="left" valign="middle">&nbsp;</td>
-                <td align="left" valign="middle">&nbsp;</td>
-              </tr>
-              <tr>
-                <th colspan="3" align="center" valign="top" scope="row"><table width="100%" border="0" cellspacing="3" cellpadding="0">
-                  <tr>
-                    <th scope="row"><table width="100%" border="0" cellspacing="0" cellpadding="0" >
-                      <tr id="MenuList3">
-                        <td width="30%" align="center" valign="middle" bgcolor="#999999" id="list3">ชื่อลูกค้า</td>
-                        <td width="42%" align="center" valign="middle" bgcolor="#999999">e-mail</td>
-                        <td width="28%" align="center" valign="middle" bgcolor="#999999">เบอร์โทร</td>
-                      </tr>
-                      <tr>
-                        <td align="left" valign="middle">แมว</td>
-                        <td align="left" valign="middle">aa@aa.com</td>
-                        <td align="left" valign="middle">0821574784</td>
-                      </tr>
-                      <tr>
-                        <td align="left" valign="middle">ช้าง</td>
-                        <td align="left" valign="middle">bb@aa.com</td>
-                        <td align="left" valign="middle">0821574899</td>
-                      </tr>
-                    </table></th>
-                  </tr>
-                </table></th>
-              </tr>
-            </table></th>
-          </tr>
-        </table>
-          <p>&nbsp;</p></th>
-      </tr>
-    </table>
-</div>
-  <br />
-  <br />
- <div>
-    <table width="800px" height="450px" border="0" align="center" cellpadding="0" cellspacing="0"  bgcolor="#FFFFFF"  class="round_image3121">
-      <tr>
-        <th align="center" valign="top" scope="row"><table width="800" border="0" cellspacing="0" cellpadding="0">
-          <tr>
-            <th scope="row"><table width="800" border="0" cellspacing="0" cellpadding="0">
-              <tr>
-                <th align="left" valign="middle" scope="row">&nbsp;</th>
-                <td align="center" valign="middle"><img src="product/manag.png" width="363" height="66" /></td>
-                <td align="left" valign="middle">&nbsp;</td>
-              </tr>
-              <tr>
-                <th align="left" valign="middle" scope="row">&nbsp;</th>
-                <td align="left" valign="middle">&nbsp;</td>
-                <td align="left" valign="middle">&nbsp;</td>
-              </tr>
-              <tr>
-                <th colspan="3" align="center" valign="top" scope="row"><table width="100%" border="0" cellspacing="3" cellpadding="0">
-                  <tr>
-                    <th scope="row"><table width="100%" border="0" cellpadding="0" cellspacing="5">
-                      <tr id="MenuList4">
-                        <td colspan="4" align="center" valign="middle" id="list4"><div align="left" class="style3"></div>
-                          <div align="left" class="style3"></div></td>
-                      </tr>
-                      <tr>
-                        <td width="24%" align="right" valign="middle" id="list4"><img src="images/imges_admin_12.jpg" width="52" height="46" /></td>
-                        <td width="32%" align="left" valign="middle" class="style3">รายงานการสั่งซื้อสินค้า</td>
-                        <td width="7%" align="right" valign="top" class="style3"><img src="images/imges_admin_03.jpg" width="45" height="44" /></td>
-                        <td width="37%" align="left" valign="middle" class="style3">รายการสินค้าทั้งหมด</td>
-                      </tr>
-                      <tr id="MenuList4">
-                        <td align="right" valign="middle" id="list4"><img src="images/imges_admin_21.jpg" width="45" height="49" /></td>
-                        <td align="left" valign="middle" class="style3">รายงานการจ่ายเงิน</td>
-                        <td align="right" valign="top" class="style3"><img src="images/imges_admin_17.jpg" width="45" height="52" /></td>
-                        <td align="left" valign="middle" class="style3">รายการซื้อขายทั้งหมด</td>
-                      </tr>
-                      <tr id="MenuList4">
-                        <td align="right" valign="middle" id="list4"><img src="images/imges_admin_04.jpg" width="52" height="44" /></td>
-                        <td align="left" valign="middle" class="style3">รายชื่อสมาชิก</td>
-                        <td align="right" valign="top" class="style3"><img src="images/add.png" alt="" width="45" height="44" /></td>
-                        <td align="left" valign="middle" class="style3">เพิ่มสินค้า/แก้ไขสินค้า</td>
-                      </tr>
-                      <tr id="MenuList4">
-                        <td align="right" valign="middle" id="list4">&nbsp;</td>
-                        <td align="left" valign="middle">&nbsp;</td>
-                        <td align="right" valign="middle">&nbsp;</td>
-                        <td align="left" valign="middle">&nbsp;</td>
-                      </tr>
-                    </table></th>
-                  </tr>
-                </table></th>
-              </tr>
-            </table></th>
-          </tr>
-        </table>
-          <p>&nbsp;</p></th>
-      </tr>
-    </table>
-</div>
- <br /><br />
  
   <br />
   
 
 <div align="center">Copyright 2013. Furniture Design. All Rights Reserved. </div>
-    <script type="text/javascript">
-            $(function() {
-				/**
-				* for each menu element, on mouseenter, 
-				* we enlarge the image, and show both sdt_active span and 
-				* sdt_wrap span. If the element has a sub menu (sdt_box),
-				* then we slide it - if the element is the last one in the menu
-				* we slide it to the left, otherwise to the right
-				*/
-                $('#sdt_menu > li').bind('mouseenter',function(){
-					var $elem = $(this);
-					$elem.find('img')
-						 .stop(true)
-						 .animate({
-							'width':'170px',
-							'height':'170px',
-							'left':'0px'
-						 },400,'easeOutBack')
-						 .andSelf()
-						 .find('.sdt_wrap')
-					     .stop(true)
-						 .animate({'top':'140px'},500,'easeOutBack')
-						 .andSelf()
-						 .find('.sdt_active')
-					     .stop(true)
-						 .animate({'height':'170px'},300,function(){
-						var $sub_menu = $elem.find('.sdt_box');
-						if($sub_menu.length){
-							var left = '170px';
-							if($elem.parent().children().length == $elem.index()+1)
-								left = '-170px';
-							$sub_menu.show().animate({'left':left},200);
-						}	
-					});
-				}).bind('mouseleave',function(){
-					var $elem = $(this);
-					var $sub_menu = $elem.find('.sdt_box');
-					if($sub_menu.length)
-						$sub_menu.hide().css('left','0px');
-					
-					$elem.find('.sdt_active')
-						 .stop(true)
-						 .animate({'height':'0px'},300)
-						 .andSelf().find('img')
-						 .stop(true)
-						 .animate({
-							'width':'0px',
-							'height':'0px',
-							'left':'85px'},400)
-						 .andSelf()
-						 .find('.sdt_wrap')
-						 .stop(true)
-						 .animate({'top':'25px'},500);
-				});
-            });
-        </script>
     </body>
 </html>
