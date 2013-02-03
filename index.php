@@ -141,7 +141,7 @@ box-shadow: #000 0 2px 10px;
 }
         .sibLockedMenu {	position:	fixed;
 	top:	80px;
-	right:-30px;
+	right:5px;
 
 	
 	padding:		5px;
@@ -257,7 +257,7 @@ function MM_swapImage() { //v3.0
 			<div class="sibLockedMenu">
 			  <table width="171" border="0" cellspacing="0" cellpadding="0">
 			    <tr>
-			      <th scope="row"><table background="product/banner_rigth.png" width="158" height="34px" border="0" cellspacing="0" cellpadding="0">
+			      <th align="right" valign="top" scope="row"><table background="product/banner_rigth.png" width="158" height="34px" border="0" cellspacing="0" cellpadding="0">
 			        <tr>
 			          <th align="center" valign="middle" scope="row">เข้าสู่ระบบ</th>
 		            </tr>
@@ -265,8 +265,20 @@ function MM_swapImage() { //v3.0
                     
 			      <th scope="row"><img src="product/bank.png" width="13" height="34" /></th>
 		        </tr>
+			    <tr>
+			      <th scope="row">&nbsp;</th>
+			      <th scope="row">&nbsp;</th>
+		        </tr>
+			    <tr>
+			      <th valign="top" bgcolor="#FFFFFF" scope="row"><img src="images/bk_show.png" alt="" width="212" height="58" /></th>
+			      <th scope="row">&nbsp;</th>
+		        </tr>
+			    <tr>
+			      <th valign="top" bgcolor="#FFFFFF" scope="row">มีสินค้าทั้งหมด (0)</th>
+			      <th scope="row">&nbsp;</th>
+		        </tr>
 		      </table>
-  </div>
+</div>
 			<ul id="sdt_menu" class="sdt_menu">
 				<li>
 					<a href="#">
