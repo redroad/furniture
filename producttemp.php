@@ -11,6 +11,7 @@ $db->connect();
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link rel="stylesheet" type="text/css" media="screen" href="css/stylesheet.css" />
 
         <title></title>
 
@@ -79,9 +80,17 @@ $db->connect();
         }
     </style>
 </head > 
-<body>
-    <div class="product-add ">
-        <form action="./controller/productcontrol.php?act=add" enctype="multipart/form-data" method="post">
+<body leftmargin="0" topmargin="0">
+<div>
+  <ul class="menu" >
+    <li><a href="#" class="active"><span>::</span></a></li>
+    <li><a href="administrator_Management.php" target="_parent"><span>Management</span></a></li>
+    <li><a href="index.php" target="_parent"><span>หน้าแรก</span></a></li>
+    <li><a href="#"><span>::</span></a></li>
+  </ul>
+</div>
+<div class="product-add ">
+    <form action="./controller/productcontrol.php?act=add" enctype="multipart/form-data" method="post">
             <table width="800px" height="450px" border="0" align="center" cellpadding="0" cellspacing="0"  bgcolor="#FFFFFF"  class="round_image31">
                 <tr>
                     <th align="center" valign="top" scope="row"><table width="800" border="0" cellspacing="0" cellpadding="0">
