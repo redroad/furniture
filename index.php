@@ -203,18 +203,18 @@
             .style3 {font-size: medium;
                      text-align: left;
             }
-        a:link {
-	text-decoration: none;
-}
-a:visited {
-	text-decoration: none;
-}
-a:hover {
-	text-decoration: none;
-}
-a:active {
-	text-decoration: none;
-}
+            a:link {
+                text-decoration: none;
+            }
+            a:visited {
+                text-decoration: none;
+            }
+            a:hover {
+                text-decoration: none;
+            }
+            a:active {
+                text-decoration: none;
+            }
         </style>
         <style type=”text/css”>
             .login{
@@ -251,8 +251,15 @@ a:active {
         </script>
     </head>
 
-    <body onload="MM_preloadImages('images/black1.png','images/next1.png')">
 
+    <body onload="MM_preloadImages('images/black1.png','images/next1.png')">
+        <?php
+        @session_start();
+        if (isset($_SESSION['user']))
+            var_dump($_SESSION['user']);
+
+        //  session_destroy();
+        ?>
         <div>
             <ul class="menu" >
 
@@ -273,7 +280,8 @@ a:active {
                     <tr>
                         <th align="right" valign="top" scope="row"><table background="product/banner_rigth.png" width="158" height="34px" border="0" cellspacing="0" cellpadding="0">
                                 <tr>
-                                    <th align="center" valign="middle" scope="row"><a href="login.php">เข้าสู่ระบบ</a></th>
+                                    <th align="center" valign="middle" scope="row" ><?php echo!empty($_SESSION['user']['name_display']) ? "<a href='./controller/membercontrol.php?act=logout'>" . $_SESSION['user']['name_display'] . "</a>" : "<a href=\"login.php\">เข้าสู่ระบบ</a>"; ?></th>
+                                    <input type="hidden" id="uid" value="<?php echo!empty($_SESSION['user']['id']) ? $_SESSION['user']['id'] : 0; ?>">
                                 </tr>
                             </table></th>
 
@@ -288,7 +296,7 @@ a:active {
                         <th scope="row">&nbsp;</th>
                     </tr>
                     <tr>
-                        <th valign="top" bgcolor="#FFFFFF" scope="row">มีสินค้าทั้งหมด (0)</th>
+                        <th valign="top" bgcolor="#FFFFFF" scope="row">มีสินค้าทั้งหมด (<label id="take-count">0</label>)</th>
                         <th scope="row">&nbsp;</th>
                     </tr>
                 </table>
@@ -419,92 +427,92 @@ a:active {
                     });
                 });
         </script>
-      
-            <table width="900px" border="0" align="center" cellpadding="0" cellspacing="0" >
-                <tr>
-                    <th colspan="0" align="left" valign="top" scope="row"><table width="900" border="0" cellpadding="0" cellspacing="0">
-                            <tr>
-                                <th colspan="0" align="left" valign="top" scope="row"><table width="900" border="0" cellpadding="0" cellspacing="0">
-                                        <tr>
-                                            <th colspan="0" align="left" valign="top" scope="row">
+
+        <table width="900px" border="0" align="center" cellpadding="0" cellspacing="0" >
+            <tr>
+                <th colspan="0" align="left" valign="top" scope="row"><table width="900" border="0" cellpadding="0" cellspacing="0">
+                        <tr>
+                            <th colspan="0" align="left" valign="top" scope="row"><table width="900" border="0" cellpadding="0" cellspacing="0">
+                                    <tr>
+                                        <th colspan="0" align="left" valign="top" scope="row">
 
 
-                                                <table width="900" height="300"  border="0" align="center" cellpadding="0" cellspacing="0"  bgcolor="#FFFFFF" class="round_image">
-                                                    <tr>
-                                                        <th scope="row">
-                                                            <table width="900" border="0" align="center" cellpadding="0" cellspacing="5">
-                                                                <tr>
-                                                                    <th scope="row">&nbsp;</th>
-                                                                    <td>&nbsp;</td>
-                                                                    <td>&nbsp;</td>
-                                                                    <td>&nbsp;</td>
-                                                                    <td align="right" valign="middle"><a href="#" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image19','','images/black1.png',1)"><label class="backbtn"><img src="images/black.png" width="70" height="14" border="0" id="Image19" /></label>&nbsp;</a><a href="#" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image20','','images/next1.png',1)"><label class="nextbtn"><img src="images/next.png" width="70" height="14" border="0" id="Image20" /></label></a></td>
-                                                                </tr>
-                                                                <tr class="product-img">
-                                                                    <th align="left" valign="middle" scope="row"><img src="product/001007.jpg" width="180" height="180" /></th>
-                                                                    <th align="left" valign="middle" scope="row"><img src="product/110005918.jpg" width="180" height="180" /></th>
-                                                                    <th align="left" valign="middle" scope="row"><img src="product/001004.jpg" width="180" height="180" /></th>
-                                                                    <th align="left" valign="middle" scope="row"><img src="product/001006.jpg" width="180" height="180" /></th>
-                                                                    <th align="left" valign="middle" scope="row"><img src="product/001005.jpg" width="180" height="180" /></th>
-                                                                </tr>
-                                                                <tr class="product-name">
-                                                                    <th align="right" valign="middle" scope="row">ชื่อ</th>
-                                                                    <th align="right" valign="middle" scope="row">ชื่อ</th>
-                                                                    <th align="right" valign="middle" scope="row">ชื่อ</th>
-                                                                    <th align="right" valign="middle" scope="row">ชื่อ</th>
-                                                                    <th align="right" valign="middle" scope="row">ชื่อ</th>
-                                                                </tr>
-                                                                <tr class="product-price">
-                                                                    <th align="right" valign="middle" scope="row">ราคา</th>
-                                                                    <th align="right" valign="middle" scope="row">ราคา</th>
-                                                                    <th align="right" valign="middle" scope="row">ราคา</th>
-                                                                    <th align="right" valign="middle" scope="row">ราคา</th>
-                                                                    <th align="right" valign="middle" scope="row">ราคา</th>
-                                                                </tr>
-                                                                <tr class="product-take">
-                                                                    <th align="right" valign="middle" scope="row">
-                                                                        <table width="120" border="0" align="center" cellpadding="0" cellspacing="2">
-                                                                            <tr>
-                                                                                <th width="14" bgcolor="#FF0000" scope="row">&nbsp;</th>
-                                                                                <td width="106" align="center" valign="top" bgcolor="#212121">หยิบใส่ตระกร้า</td>
-                                                                            </tr>
-                                                                        </table>
-                                                                    </th>
-                                                                    <th align="right" valign="middle" scope="row"><table width="120" border="0" cellpadding="0" cellspacing="2">
-                                                                            <tr>
-                                                                                <th bgcolor="#FF0000" scope="row">&nbsp;</th>
-                                                                                <td align="center" valign="top" bgcolor="#212121">หยิบใส่ตระกร้า</td>
-                                                                            </tr>
-                                                                        </table></th>
-                                                                    <th align="right" valign="middle" scope="row"><table width="120" border="0" cellpadding="0" cellspacing="2">
-                                                                            <tr>
-                                                                                <th bgcolor="#FF0000" scope="row">&nbsp;</th>
-                                                                                <td align="center" valign="top" bgcolor="#212121">หยิบใส่ตระกร้า</td>
-                                                                            </tr>
-                                                                        </table></th>
-                                                                    <th align="right" valign="middle" scope="row"><table width="120" border="0" cellpadding="0" cellspacing="2">
-                                                                            <tr>
-                                                                                <th bgcolor="#FF0000" scope="row">&nbsp;</th>
-                                                                                <td align="center" valign="top" bgcolor="#212121">หยิบใส่ตระกร้า</td>
-                                                                            </tr>
-                                                                        </table></th>
-                                                                    <th align="right" valign="middle" scope="row"><table width="120" border="0" cellpadding="0" cellspacing="2">
-                                                                            <tr>
-                                                                                <th bgcolor="#FF0000" scope="row">&nbsp;</th>
-                                                                                <td align="center" valign="top" bgcolor="#212121">หยิบใส่ตระกร้า</td>
-                                                                            </tr>
-                                                                        </table></th>
-                                                                </tr>
-                                                            </table>
-                                                        </th>
-                                                    </tr>
-                                                </table></th>
-                                        </tr>
-                                    </table></th>
-                            </tr>
-                        </table></th>
-                </tr>
-            </table>
+                                            <table width="900" height="300"  border="0" align="center" cellpadding="0" cellspacing="0"  bgcolor="#FFFFFF" class="round_image">
+                                                <tr>
+                                                    <th scope="row">
+                                                        <table width="900" border="0" align="center" cellpadding="0" cellspacing="5">
+                                                            <tr>
+                                                                <th scope="row">&nbsp;</th>
+                                                                <td>&nbsp;</td>
+                                                                <td>&nbsp;</td>
+                                                                <td>&nbsp;</td>
+                                                                <td align="right" valign="middle"><a href="#" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image19','','images/black1.png',1)"><label class="backbtn"><img src="images/black.png" width="70" height="14" border="0" id="Image19" /></label>&nbsp;</a><a href="#" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image20','','images/next1.png',1)"><label class="nextbtn"><img src="images/next.png" width="70" height="14" border="0" id="Image20" /></label></a></td>
+                                                            </tr>
+                                                            <tr class="product-img">
+                                                                <th align="left" valign="middle" scope="row"><img src="product/001007.jpg" width="180" height="180" /></th>
+                                                                <th align="left" valign="middle" scope="row"><img src="product/110005918.jpg" width="180" height="180" /></th>
+                                                                <th align="left" valign="middle" scope="row"><img src="product/001004.jpg" width="180" height="180" /></th>
+                                                                <th align="left" valign="middle" scope="row"><img src="product/001006.jpg" width="180" height="180" /></th>
+                                                                <th align="left" valign="middle" scope="row"><img src="product/001005.jpg" width="180" height="180" /></th>
+                                                            </tr>
+                                                            <tr class="product-name">
+                                                                <th align="right" valign="middle" scope="row">ชื่อ</th>
+                                                                <th align="right" valign="middle" scope="row">ชื่อ</th>
+                                                                <th align="right" valign="middle" scope="row">ชื่อ</th>
+                                                                <th align="right" valign="middle" scope="row">ชื่อ</th>
+                                                                <th align="right" valign="middle" scope="row">ชื่อ</th>
+                                                            </tr>
+                                                            <tr class="product-price">
+                                                                <th align="right" valign="middle" scope="row">ราคา</th>
+                                                                <th align="right" valign="middle" scope="row">ราคา</th>
+                                                                <th align="right" valign="middle" scope="row">ราคา</th>
+                                                                <th align="right" valign="middle" scope="row">ราคา</th>
+                                                                <th align="right" valign="middle" scope="row">ราคา</th>
+                                                            </tr>
+                                                            <tr class="product-take">
+                                                                <th align="right" valign="middle" scope="row">
+                                                                    <table width="120" border="0" align="center" cellpadding="0" cellspacing="2">
+                                                                        <tr>
+                                                                            <th width="14" bgcolor="#FF0000" scope="row">&nbsp;</th>
+                                                                            <td width="106" align="center" valign="top" bgcolor="#212121">หยิบใส่ตระกร้า</td>
+                                                                        </tr>
+                                                                    </table>
+                                                                </th>
+                                                                <th align="right" valign="middle" scope="row"><table width="120" border="0" cellpadding="0" cellspacing="2">
+                                                                        <tr>
+                                                                            <th bgcolor="#FF0000" scope="row">&nbsp;</th>
+                                                                            <td align="center" valign="top" bgcolor="#212121">หยิบใส่ตระกร้า</td>
+                                                                        </tr>
+                                                                    </table></th>
+                                                                <th align="right" valign="middle" scope="row"><table width="120" border="0" cellpadding="0" cellspacing="2">
+                                                                        <tr>
+                                                                            <th bgcolor="#FF0000" scope="row">&nbsp;</th>
+                                                                            <td align="center" valign="top" bgcolor="#212121">หยิบใส่ตระกร้า</td>
+                                                                        </tr>
+                                                                    </table></th>
+                                                                <th align="right" valign="middle" scope="row"><table width="120" border="0" cellpadding="0" cellspacing="2">
+                                                                        <tr>
+                                                                            <th bgcolor="#FF0000" scope="row">&nbsp;</th>
+                                                                            <td align="center" valign="top" bgcolor="#212121">หยิบใส่ตระกร้า</td>
+                                                                        </tr>
+                                                                    </table></th>
+                                                                <th align="right" valign="middle" scope="row"><table width="120" border="0" cellpadding="0" cellspacing="2">
+                                                                        <tr>
+                                                                            <th bgcolor="#FF0000" scope="row">&nbsp;</th>
+                                                                            <td align="center" valign="top" bgcolor="#212121">หยิบใส่ตระกร้า</td>
+                                                                        </tr>
+                                                                    </table></th>
+                                                            </tr>
+                                                        </table>
+                                                    </th>
+                                                </tr>
+                                            </table></th>
+                                    </tr>
+                                </table></th>
+                        </tr>
+                    </table></th>
+            </tr>
+        </table>
         <br /><br />
         <div  >
             <table width="650" height="500"  bgcolor="#FFFFFF" border="0" align="center" cellpadding="0" cellspacing="0"  class="round_image">

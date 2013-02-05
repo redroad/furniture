@@ -160,8 +160,7 @@ if ($act == "update") {
 if ($act == "logout") {
     @session_start();
     session_destroy();
-    header('Location: ../index.php');
-    
+    header('Location: ../index.php');    
 }
 
 $db->close();

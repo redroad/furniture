@@ -7,9 +7,11 @@ $(document).ready(function(){
             email:email,
             password:password
         },function(res){
-       //     console.log(res)
-          
-            $(window.location).attr('href', '../index.php');
+            if(res.success){          
+                $(window.location).attr('href', '../index.php');
+            }else{
+                alert(res.desc);
+            }
             
                 
         });

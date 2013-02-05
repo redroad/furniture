@@ -9,6 +9,7 @@ $(document).ready(function(){
         getproduct();
     });
     
+    
     $(".backbtn").live("click",function(){
         //alert("back");
         if(back == 0){
@@ -43,6 +44,20 @@ $(document).ready(function(){
         next = 2;
         getproduct();
        
+    });
+    
+    $(".take").live("click",function(){
+       var uid = $("#uid").val();
+       if(uid==0){
+           alert("Please login");
+       }else{
+           var c = confirm("Add this product to cart");
+           if(c){
+               
+           }else{
+               
+           }
+       }
     });
     
 });
