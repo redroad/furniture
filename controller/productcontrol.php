@@ -100,5 +100,36 @@ if ($act == "update") {
     $db->exec($sql);
 }
 
+if ($act == 'buy') {
+    @session_start();
+    $list = $_REQUEST['list'];
+    $uid = $_SESSION['user']['id'];
+    $lists = explode("|", $list);
+    $day = date("Y-m-d");
+    $sql = "INSERT INTO `cart` (`member_id`, `order_date`, `status`) VALUES ($uid, '$day', '1')";
+    echo $sql . "\n";
+    $db->exec($sql);
+    $sql = "select last_insert_id()";
+    $cid = $db->query($sql);
+    $cid = $cid[0][0];
+    $total = 0;
+    foreach ($lists as $id) {
+        if (!empty($id)) {
+            $pid = (int) $id;
+            $sql = "SELECT * FROM product WHERE id=$pid";
+            echo $sql . "\n";
+            $rs = $db->query($sql);
+            $total += $rs[0]['price'];
+            $sql = "INSERT INTO `mapping_cart_product` (`cart_id`, `produc_id`, `take`) VALUES ($cid, {$rs[0]['id']}, 1);";
+            echo $sql . "\n";
+            $db->exec($sql);
+        }
+    }
+    echo $total;
+    $sql = "UPDATE `cart` SET `total_price`=$total WHERE  `id`=$cid LIMIT 1;";
+    $db->exec($sql);
+    @header("Location:../user_report.php");
+}
+
 $db->close();
 ?>

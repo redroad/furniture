@@ -3,6 +3,8 @@ var back = 0;
 var page = 1;
 var next = 2;
 var max =0;
+var list = "";
+var counter = 0;
 $(document).ready(function(){
 
     $(function(){
@@ -47,17 +49,23 @@ $(document).ready(function(){
     });
     
     $(".take").live("click",function(){
-       var uid = $("#uid").val();
-       if(uid==0){
-           alert("Please login");
-       }else{
-           var c = confirm("Add this product to cart");
-           if(c){
+        var uid = $("#uid").val();
+        if(uid==0){
+            alert("Please login");
+        }else{
+            var c = confirm("Add this product to cart");
+            if(c){
+                counter++; 
+                $("#take-count").html(counter);
+                list += $(this).attr('pid') + "|";
+                console.log(list);
+            }else{
                
-           }else{
-               
-           }
-       }
+            }
+        }
+    });
+    $("#go-to-cart").live("click",function(){
+        window.location = "user_Basket.php?list="+list; 
     });
     
 });

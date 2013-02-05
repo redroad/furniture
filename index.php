@@ -292,7 +292,7 @@
                         <th scope="row">&nbsp;</th>
                     </tr>
                     <tr>
-                        <th valign="top" bgcolor="#FFFFFF" scope="row"><a href="user_Basket.php"><img src="images/bk_show.png" alt="" width="212" height="58" /></a></th>
+                        <th valign="top" bgcolor="#FFFFFF" scope="row"><a href="#"><img id="go-to-cart" src="images/bk_show.png" alt="" width="212" height="58" /></a></th>
                         <th scope="row">&nbsp;</th>
                     </tr>
                     <tr>
