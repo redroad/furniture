@@ -117,8 +117,27 @@
 #id_register_content form div table thead tr td b {
 	font-size: 16px;
 }
+body,td,th {
+	font-family: Tahoma, Arial, "MS Sans Serif", sans-serif;
+}
+body {
+	background-image: url(bglogin.png);
+}
                     -->
                 </style>
+                      <style type="text/css">
+                table {background-color: transparent;border-style: none;border-spacing: none;}TD {border: none;border-color: none;background: none;}
+                .round_image1.table tr th table tr th {
+                    font-size: 12px;
+                    color: #000;
+                    font-weight: bold;
+                    font-family: "MS Serif", "New York", serif;
+                    text-align: left;
+                }
+                th {
+                    font-size: 16px;
+                }
+            </style>
                 </head>
                 <body leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" style="margin: 0px; ">
 <div>
@@ -157,7 +176,7 @@
                         <div style="clear: both;"></div>
 
                         <!-- Content -->
-                        <div class="register_plate" product='lnwshop'>
+                        <div class="register_plate table" product='lnwshop'>
                             <table cellpadding="0" cellspacing="0" width="100%">
                                 <tr valign="top">
                                     <td id="id_register_content" style="height: 100%;">
