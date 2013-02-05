@@ -203,6 +203,18 @@
             .style3 {font-size: medium;
                      text-align: left;
             }
+        a:link {
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+a:active {
+	text-decoration: none;
+}
         </style>
         <style type=”text/css”>
             .login{
@@ -261,7 +273,7 @@
                     <tr>
                         <th align="right" valign="top" scope="row"><table background="product/banner_rigth.png" width="158" height="34px" border="0" cellspacing="0" cellpadding="0">
                                 <tr>
-                                    <th align="center" valign="middle" scope="row">เข้าสู่ระบบ</th>
+                                    <th align="center" valign="middle" scope="row"><a href="login.php">เข้าสู่ระบบ</a></th>
                                 </tr>
                             </table></th>
 
@@ -272,7 +284,7 @@
                         <th scope="row">&nbsp;</th>
                     </tr>
                     <tr>
-                        <th valign="top" bgcolor="#FFFFFF" scope="row"><img src="images/bk_show.png" alt="" width="212" height="58" /></th>
+                        <th valign="top" bgcolor="#FFFFFF" scope="row"><a href="user_Basket.php"><img src="images/bk_show.png" alt="" width="212" height="58" /></a></th>
                         <th scope="row">&nbsp;</th>
                     </tr>
                     <tr>
