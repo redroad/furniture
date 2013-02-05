@@ -407,7 +407,7 @@
                     });
                 });
         </script>
-        <div id="product" >
+     
             <table width="900px" border="0" align="center" cellpadding="0" cellspacing="0" >
                 <tr>
                     <th colspan="0" align="left" valign="top" scope="row"><table width="900" border="0" cellpadding="0" cellspacing="0">
@@ -493,7 +493,7 @@
                         </table></th>
                 </tr>
             </table>
-        </div> <br /><br />
+     <br /><br />
         <div  >
             <table width="650" height="500"  bgcolor="#FFFFFF" border="0" align="center" cellpadding="0" cellspacing="0"  class="round_image">
                 <tr>
