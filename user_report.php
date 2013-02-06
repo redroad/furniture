@@ -93,8 +93,8 @@ include './controller/DBcontrol.php';
                                                     <tr>
                                                         <th scope="row"><table width="100%" border="1" cellspacing="0" cellpadding="0" bordercolor="#CCCCCC">
                                                                 <tr id="MenuList2">
-                                                                    <td width="7%" align="center" valign="middle" bgcolor="#CCCCCC" id="list2">ชื่อลูกค้า</td>
                                                                     <td width="15%" align="center" valign="middle" bgcolor="#CCCCCC">วันที่</td>
+                                                                    <td width="7%" align="center" valign="middle" bgcolor="#CCCCCC" id="list2">ชื่อลูกค้า</td>                                                                    
                                                                     <td width="11%" align="center" valign="middle" bgcolor="#CCCCCC">รายการสินค้า</td>
                                                                     <td width="8%" align="center" valign="middle" bgcolor="#CCCCCC">จำนวนเงิน</td>
                                                                     <td width="4%" align="center" valign="middle" bgcolor="#CCCCCC">สถานะ</td>
@@ -117,8 +117,8 @@ include './controller/DBcontrol.php';
                                                                             $tp = 0;
                                                                         }
                                                                         echo "<tr>";
-                                                                        echo "<td align = \"left\" valign = \"middle\">{$r['name_display']}</td>";
                                                                         echo "<td align = \"left\" valign = \"middle\">{$r['order_date']}</td>";
+                                                                        echo "<td align = \"left\" valign = \"middle\">{$r['name_display']}</td>";
                                                                         $p .= $r['product_name'] . ", ";
                                                                         $tp = $r['total_price'];
                                                                     } else {
