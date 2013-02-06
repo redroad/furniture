@@ -10,7 +10,8 @@
         <link rel="stylesheet" type="text/css" media="screen" href="css/stylesheet.css" />
         <script src="./js/jquery-1.7.2.min.js"></script>
         <script src="./js/index.js"></script>
-        <style type="text/css">
+        <script src="Scripts/swfobject_modified.js" type="text/javascript"></script>
+    <style type="text/css">
             <!--
             body {
                 margin-left: 0px;
@@ -56,9 +57,9 @@
                 height:69px;
             }
             body,td,th {
-                color: #000;
-                font-family: "ms Sans Serif";
-                font-size: small;
+	color: #C60;
+	font-family: "MS Serif", "New York", serif;
+	font-size: medium;
             }
             #apDiv1 {
                 position:absolute;
@@ -256,7 +257,7 @@
         <?php
         @session_start();
         if (isset($_SESSION['user']))
-            var_dump($_SESSION['user']);
+            //var_dump($_SESSION['user']);
 
         //  session_destroy();
         ?>
@@ -267,7 +268,7 @@
                 <li><a href="contact" target="_parent"><span>ติดต่อเรา  </span></a></li>
 
                 <li><a href="payment.php" target="_parent"><span>การชำระเงิน</span></a></li>
-                <li><a href="howbuy" target="_parent"><span>วิธีการสั่งซื้อ</span></a></li>
+                <li><a href="howbuy.php" target="_parent"><span>วิธีการสั่งซื้อ</span></a></li>
                 <li><a href="index.php" target="_parent"><span>หน้าแรก</span></a></li>
                 <li><a href="#"><span>::</span></a></li>
 
@@ -515,9 +516,41 @@
         </table>
         <br /><br />
         <div  >
-            <table width="650" height="500"  bgcolor="#FFFFFF" border="0" align="center" cellpadding="0" cellspacing="0"  class="round_image">
+            <table width="650" height="420"  bgcolor="#FFFFFF" border="0" align="center" cellpadding="0" cellspacing="0"  class="round_image">
                 <tr>
-                    <th align="center" valign="top" scope="row">&nbsp;</th>
+                    <th align="left" valign="top" scope="row"><img src="images/demo.png" alt="" width="178" height="48" /></th>
+                </tr>
+                <tr>
+                  <th align="center" valign="top" scope="row"><object id="FlashID" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="550" height="400">
+                    <param name="movie" value="desing/New folder/เตียวนอน.swf" />
+                    <param name="quality" value="high" />
+                    <param name="wmode" value="opaque" />
+                    <param name="swfversion" value="6.0.65.0" />
+                    <!-- This param tag prompts users with Flash Player 6.0 r65 and higher to download the latest version of Flash Player. Delete it if you don’t want users to see the prompt. -->
+                    <param name="expressinstall" value="Scripts/expressInstall.swf" />
+                    <!-- Next object tag is for non-IE browsers. So hide it from IE using IECC. -->
+                    <!--[if !IE]>-->
+                    <object type="application/x-shockwave-flash" data="desing/New folder/เตียวนอน.swf" width="550" height="400">
+                      <!--<![endif]-->
+                      <param name="quality" value="high" />
+                      <param name="wmode" value="opaque" />
+                      <param name="swfversion" value="6.0.65.0" />
+                      <param name="expressinstall" value="Scripts/expressInstall.swf" />
+                      <!-- The browser displays the following alternative content for users with Flash Player 6.0 and older. -->
+                      <div>
+                        <h4>Content on this page requires a newer version of Adobe Flash Player.</h4>
+                        <p><a href="http://www.adobe.com/go/getflashplayer"><img src="http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif" alt="Get Adobe Flash player" width="112" height="33" /></a></p>
+                      </div>
+                      <!--[if !IE]>-->
+                    </object>
+                    <!--<![endif]-->
+                  </object></th>
+                </tr>
+                <tr>
+                  <th align="center" valign="top" scope="row"><a href="bed.php">ทดลองใช้ Demo Desing &gt;&gt;</a></th>
+                </tr>
+                <tr>
+                  <th align="center" valign="top" scope="row">&nbsp;</th>
                 </tr>
             </table>
         </div>
@@ -528,5 +561,8 @@
 
 
         <div align="center">Copyright 2013. Furniture Design. All Rights Reserved. </div>
+    <script type="text/javascript">
+swfobject.registerObject("FlashID");
+        </script>
     </body>
 </html>

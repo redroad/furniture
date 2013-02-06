@@ -64,14 +64,14 @@ box-shadow: #000 0 2px 10px;
                 <li><a href="contact" target="_parent"><span>ติดต่อเรา  </span></a></li>
 
                 <li><a href="payment.php" target="_parent"><span>การชำระเงิน</span></a></li>
-                <li><a href="howbuy.php" target="_parent"><span>วิธีการสั่งซื้อ</span></a></li>
+                <li><a href="howbuy" target="_parent"><span>วิธีการสั่งซื้อ</span></a></li>
                 <li><a href="index.php" target="_parent"><span>หน้าแรก</span></a></li>
                 <li><a href="#"><span>::</span></a></li>
 		
 	</ul>
 </div><br />
 <br /><center>
-<img src="product/alertTran.png" width="1018" height="546" /></center><br /><br />
+<img src="images/buy.png" width="800" height="474" /></center><br /><br />
 <div align="center"> <font color="#FFFFFF">Copyright 2013. Furniture Design. All Rights Reserved. </font></div>
 <br /><br />
 </html>
