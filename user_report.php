@@ -94,10 +94,8 @@ include './controller/DBcontrol.php';
                                                         <th scope="row"><table width="100%" border="1" cellspacing="0" cellpadding="0" bordercolor="#CCCCCC">
                                                                 <tr id="MenuList2">
                                                                     <td width="7%" align="center" valign="middle" bgcolor="#CCCCCC" id="list2">ชื่อลูกค้า</td>
-<<<<<<< HEAD
                                                                     <td width="15%" align="center" valign="middle" bgcolor="#CCCCCC">วันที่</td>
                                                                     <td width="11%" align="center" valign="middle" bgcolor="#CCCCCC">รายการสินค้า</td>
-=======                                                                    >>>>>>> b08544ead76769a932fa5caeaa10927b69c9a545
                                                                     <td width="8%" align="center" valign="middle" bgcolor="#CCCCCC">จำนวนเงิน</td>
                                                                     <td width="4%" align="center" valign="middle" bgcolor="#CCCCCC">สถานะ</td>
                                                                 </tr>                                                                
