@@ -265,7 +265,7 @@
 
                 <li><a href="#" class="active"><span>::</span></a></li>
                 <li><a href="contact" target="_parent"><span>ติดต่อเรา  </span></a></li>
-                <li><a href="shipping" target="_parent"><span>การจัดส่งสินค้า</span></a></li>
+
                 <li><a href="payment.php" target="_parent"><span>การชำระเงิน</span></a></li>
                 <li><a href="howbuy" target="_parent"><span>วิธีการสั่งซื้อ</span></a></li>
                 <li><a href="index.php" target="_parent"><span>หน้าแรก</span></a></li>
@@ -517,54 +517,7 @@
         <div  >
             <table width="650" height="500"  bgcolor="#FFFFFF" border="0" align="center" cellpadding="0" cellspacing="0"  class="round_image">
                 <tr>
-                    <th scope="row"><table width="550" border="0" align="center" cellpadding="0" cellspacing="0" >
-                            <tr>
-                                <td colspan="3" align="left" valign="top" bgcolor="#FFFFFF" scope="row"><img src="product/detail.png" width="207" height="45" align="left" /></td>
-                            </tr>
-                            <tr>
-                                <th align="right" valign="top" bgcolor="#FFFFFF" scope="row"><img src="product/001005.jpg" width="400" height="400" /></th>
-                                <td align="left" valign="top" bgcolor="#FFFFFF"><img src="product/left_line_dot (2).png" width="19" height="135" /></td>
-                                <td align="left" valign="top" bgcolor="#FFFFFF"><table width="100%" border="0" cellpadding="0" cellspacing="0" dir="ltr">
-                                        <tr>
-                                            <th align="left" valign="top" scope="row">&nbsp;</th>
-                                        </tr>
-                                        <tr>
-                                            <th align="left" valign="top" id="name" scope="row">ARTHUR</th>
-                                        </tr>
-                                        <tr>
-                                            <th align="left" valign="top" style="font-family: 'ms Sans Serif'; font-size: small;" scope="row">ARTHUR เก้าอี้ทานอาหาร strip BE </th>
-                                        </tr>
-                                        <tr>
-                                            <th align="left" valign="top" scope="row">&nbsp;</th>
-                                        </tr>
-                                        <tr>
-                                            <th align="left" valign="top" scope="row"><img src="product/code.png" alt="" width="74" height="24" /></th>
-                                        </tr>
-                                        <tr>
-                                            <th align="left" valign="top" style="font-size: 18px" scope="row">001001</th>
-                                        </tr>
-                                        <tr>
-                                            <th align="left" valign="top" scope="row">&nbsp;</th>
-                                        </tr>
-                                        <tr>
-                                            <th align="left" valign="top" scope="row"><img src="product/desc-price.gif" alt="" width="25" height="10" /><br /></th>
-                                        </tr>
-                                        <tr>
-                                            <th align="left" valign="top" scope="row">4,290</th>
-                                        </tr>
-                                        <tr>
-                                            <th align="left" valign="top" scope="row">&nbsp;</th>
-                                        </tr>
-                                        <tr>
-                                            <th align="left" valign="top" scope="row"><img src="product/02.png" width="174" height="51" /></th>
-                                        </tr>
-                                    </table></td>
-                            </tr>
-                            <tr>
-                                <th colspan="3" bgcolor="#FFFFFF" scope="row"><hr />
-                                    &nbsp;</th>
-                            </tr>
-                        </table></th>
+                    <th align="center" valign="top" scope="row">&nbsp;</th>
                 </tr>
             </table>
         </div>

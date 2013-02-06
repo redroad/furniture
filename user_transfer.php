@@ -121,11 +121,12 @@ box-shadow: #000 0 2px 10px;
                     </form></td>
                   </tr>
                   <tr>
-                    <th scope="row">&nbsp;</th>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                  </tr>
-                </table></th>
+                    <th colspan="3" scope="row"><h2><span style="color: #00F"><br />
+                      *  หรือ โทรแจ้งการชำระเงิน โดยตรง ได้ที่หมายเลข 089-665187</span><br />
+                      <br />
+                    </h2></th>
+                    </tr>
+              </table></th>
               </tr>
             </table></th>
           </tr>

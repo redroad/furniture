@@ -194,12 +194,12 @@ $db->connect();
                             $rs = $db->query($sql);
                             foreach ($rs as $r) {
                                 echo "<tr>";
-                                echo "<td>{$r['id']}</td>";
+                               echo "<td>{$r['id']}</td>";
                                 echo "<td>{$r['product_name']}</td>";
                                 echo "<td>{$r['product_detail']}</td>";
-                                echo "<td>";
+                                echo "<td>{$r['type_id']}</td>";
+                                echo "<td>{$r['available']}</td>";								
                                 echo "<td>{$r['price']}</td>";
-                                echo "<td>";
                                 echo "<td>{$r['img']}</td>";
                                 echo "<td><a href='productedittemp.php?id={$r['id']}' target=_blank>Edit</a> | <a href='./controller/productcontrol.php?act=del&id={$r['id']}&img={$r['img']}'>Delete</a></td>";
                                 echo "</tr>";

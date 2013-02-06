@@ -1,3 +1,9 @@
+<?php
+include './controller/DBcontrol.php';
+$db = new DBcontrol();
+$db->connect();
+?>
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -94,15 +100,25 @@ box-shadow: #000 0 2px 10px;
                         <td width="42%" align="center" valign="middle" bgcolor="#999999">e-mail</td>
                         <td width="28%" align="center" valign="middle" bgcolor="#999999">เบอร์โทร</td>
                       </tr>
+                       </thead>
+                        <tbody>
+                            <?php
+                            $sql = "SELECT * FROM member";
+                            $rs = $db->query($sql);
+                            foreach ($rs as $r) {
+                                echo "<tr>";
+                               echo "<td>{$r['name_display']}</td>";
+                               echo "<td>{$r['email']}</td>";
+                               echo "<td>{$r['phone']}</td>";
+                               
+                            }
+                            ?>
+                        </tbody>
+                    </table></th>
                       <tr>
-                        <td align="left" valign="middle">แมว</td>
-                        <td align="left" valign="middle">aa@aa.com</td>
-                        <td align="left" valign="middle">0821574784</td>
-                      </tr>
-                      <tr>
-                        <td align="left" valign="middle">ช้าง</td>
-                        <td align="left" valign="middle">bb@aa.com</td>
-                        <td align="left" valign="middle">0821574899</td>
+                        <td align="center" valign="middle" bgcolor="#999999" id="list">&nbsp;</td>
+                        <td align="center" valign="middle" bgcolor="#999999">&nbsp;</td>
+                        <td align="center" valign="middle" bgcolor="#999999">&nbsp;</td>
                       </tr>
                     </table></th>
                   </tr>
