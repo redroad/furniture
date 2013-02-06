@@ -71,7 +71,7 @@ box-shadow: #000 0 2px 10px;
 	</ul>
 </div><br />
 <br /><center>
-<img src="images/buy.png" width="800" height="474" /></center><br /><br />
+<img src="images/tel.png" width="640" height="480" /></center><br /><br />
 <div align="center"> <font color="#FFFFFF">Copyright 2013. Furniture Design. All Rights Reserved. </font></div>
 <br /><br />
 </html>
