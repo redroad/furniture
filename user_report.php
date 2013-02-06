@@ -94,8 +94,8 @@ include './controller/DBcontrol.php';
                                                         <th scope="row"><table width="100%" border="1" cellspacing="0" cellpadding="0" bordercolor="#CCCCCC">
                                                                 <tr id="MenuList2">
                                                                     <td align="center" valign="middle" bgcolor="#CCCCCC" id="list2">ชื่อลูกค้า</td>
-                                                                    <td align="center" valign="middle" bgcolor="#CCCCCC">วัน/เวลา ที่โอนเงิน</td>
-                                                                    <td align="center" valign="middle" bgcolor="#CCCCCC">รายการสินค้า</td>
+                                                                    <td align="center" valign="middle"  bgcolor="#CCCCCC">วัน/เวลา ที่สั่งซื้อ</td>
+                                                                    <td align="center" valign="middle" width="50%" bgcolor="#CCCCCC">รายการสินค้า</td>
                                                                     <td align="center" valign="middle" bgcolor="#CCCCCC">จำนวนเงิน</td>
                                                                     <td align="center" valign="middle" bgcolor="#CCCCCC">สถานะ</td>
                                                                 </tr>                                                                
