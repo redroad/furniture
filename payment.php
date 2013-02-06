@@ -61,7 +61,7 @@ box-shadow: #000 0 2px 10px;
         <ul class="menu" >
 
                 <li><a href="#" class="active"><span>::</span></a></li>
-                <li><a href="contact" target="_parent"><span>ติดต่อเรา  </span></a></li>
+                <li><a href="contact.php" target="_parent"><span>ติดต่อเรา  </span></a></li>
 
                 <li><a href="payment.php" target="_parent"><span>การชำระเงิน</span></a></li>
                 <li><a href="howbuy.php" target="_parent"><span>วิธีการสั่งซื้อ</span></a></li>
