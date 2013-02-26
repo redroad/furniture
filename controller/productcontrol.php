@@ -131,5 +131,15 @@ if ($act == 'buy') {
     @header("Location:../user_report.php");
 }
 
+if ($act = 'shipping') {
+    $id = $_REQUEST['id'];
+    $sql = "UPDATE `cart` SET `status`='3' WHERE  `id`=$id LIMIT 1;";
+    $db->exec($sql);
+}
+if ($act = 'cancel-product') {
+    $id = $_REQUEST['id'];
+    $sql = "UPDATE `cart` SET `status`='4' WHERE  `id`=$id LIMIT 1;";
+    $db->exec($sql);
+}
 $db->close();
 ?>

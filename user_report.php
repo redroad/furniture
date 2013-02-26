@@ -6,7 +6,8 @@ include './controller/DBcontrol.php';
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <link rel="stylesheet" type="text/css" media="screen" href="css/stylesheet.css" />
-
+        <script src="/js/jquery-1.7.2.min.js"></script>
+        <script src="/js/product.js"></script>
         <title>:: FD :: USER</title>
         <style type="text/css">
             <!--
@@ -93,11 +94,13 @@ include './controller/DBcontrol.php';
                                                     <tr>
                                                         <th scope="row"><table width="100%" border="1" cellspacing="0" cellpadding="0" bordercolor="#CCCCCC">
                                                                 <tr id="MenuList2">
+                                                                    <td width="15%" align="center" valign="middle" bgcolor="#CCCCCC">หมายเลยอ้างอิง</td>
                                                                     <td width="15%" align="center" valign="middle" bgcolor="#CCCCCC">วันที่</td>
                                                                     <td width="7%" align="center" valign="middle" bgcolor="#CCCCCC" id="list2">ชื่อลูกค้า</td>                                                                    
                                                                     <td width="11%" align="center" valign="middle" bgcolor="#CCCCCC">รายการสินค้า</td>
                                                                     <td width="8%" align="center" valign="middle" bgcolor="#CCCCCC">จำนวนเงิน</td>
                                                                     <td width="4%" align="center" valign="middle" bgcolor="#CCCCCC">สถานะ</td>
+                                                                    <td width="4%" align="center" valign="middle" bgcolor="#CCCCCC"></td>
                                                                 </tr>                                                                
                                                                 <?php
                                                                 $rs = getbuyList();
@@ -106,19 +109,27 @@ include './controller/DBcontrol.php';
                                                                 $p = "";
                                                                 $old = "";
                                                                 $tp = 0;
+                                                                $lastst = "";
+                                                                $stid = 0;
+                                                                $cid = 0;
                                                                 foreach ($rs as $r) {
                                                                     if ($r['cid'] != $current) {
                                                                         if ($counter != 1) {
-                                                                            echo "<td align = \"left\" valign = \"middle\">$p</td>";
-                                                                            echo "<td align = \"left\" valign = \"middle\">$tp</td>";
-                                                                            echo "<td align = \"center\" valign = \"middle\">{$r['status']}</td>";
+                                                                            echo "<td align = \"center\" valign = \"middle\">$p</td>";
+                                                                            echo "<td align = \"center\" valign = \"middle\">$tp</td>";
+                                                                            echo "<td align = \"center\" valign = \"middle\">$lastst</td>";
+                                                                            echo "<td align = \"center\" valign = \"middle\">";
+                                                                            if ($stid == 1)
+                                                                                echo "<input type='button' class='cancel-product' value='Cancel' pk=$cid>";
+                                                                            echo "</td>";
                                                                             echo "</tr>";
                                                                             $p = "";
                                                                             $tp = 0;
                                                                         }
                                                                         echo "<tr>";
-                                                                        echo "<td align = \"left\" valign = \"middle\">{$r['order_date']}</td>";
-                                                                        echo "<td align = \"left\" valign = \"middle\">{$r['name_display']}</td>";
+                                                                        echo "<td align = \"center\" valign = \"middle\">{$r['cid']}</td>";
+                                                                        echo "<td align = \"center\" valign = \"middle\">{$r['order_date']}</td>";
+                                                                        echo "<td align = \"center\" valign = \"middle\">{$r['name_display']}</td>";
                                                                         $p .= $r['product_name'] . ", ";
                                                                         $tp = $r['total_price'];
                                                                     } else {
@@ -127,11 +138,18 @@ include './controller/DBcontrol.php';
                                                                     }
 
                                                                     $current = $r['cid'];
+                                                                    $lastst = $r['status'];
+                                                                    $stid = $r['stid'];
+                                                                    $cid = $r['cid'];
                                                                     $counter++;
                                                                 }
                                                                 echo "<td align = \"left\" valign = \"middle\">$p</td>";
                                                                 echo "<td align = \"left\" valign = \"middle\">$tp</td>";
                                                                 echo "<td align = \"center\" valign = \"middle\">{$r['status']}</td>";
+                                                                echo "<td align = \"center\" valign = \"middle\">";
+                                                                if ($r['stid'] == 1)
+                                                                    echo "<input type='button' class='cancel-product' value='Cancel' pk={$r['cid']}>";
+                                                                echo "</td>";
                                                                 echo "</tr>";
                                                                 ?>
                                                             </table></th>
@@ -154,7 +172,7 @@ function getbuyList() {
     $id = $_SESSION['user']['id'];
     $db = new DBcontrol();
     $db->connect();
-    $sql = "SELECT *,c.id AS cid FROM cart AS c";
+    $sql = "SELECT *,c.id AS cid,c.status AS stid FROM cart AS c";
     $sql .= " INNER JOIN member AS m ON c.member_id = m.id";
     $sql .= " INNER JOIN mapping_cart_product AS mcp ON c.id = mcp.cart_id";
     $sql .= " INNER JOIN product AS p ON mcp.produc_id = p.id";

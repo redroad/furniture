@@ -15,7 +15,7 @@ class DBcontrol {
             }
             mysql_select_db($this->db, $this->con);
             mysql_query("SET character_set_results = 'utf8', character_set_client = 'utf8', character_set_connection = 'utf8', character_set_database = 'utf8', character_set_server = 'utf8'", $this->con);
-           // echo 'get connection';
+            // echo 'get connection';
             return $this->con;
         } catch (Exception $exc) {
             echo $exc->getTraceAsString();
@@ -23,7 +23,7 @@ class DBcontrol {
     }
 
     public function query($sql) {
-        $rs = mysql_query($sql)or die(mysql_error());
+        $rs = mysql_query($sql) or die(mysql_error());
         $list = array();
         while ($row = mysql_fetch_array($rs)) {
             $list[] = $row;
@@ -31,8 +31,8 @@ class DBcontrol {
         return $list;
     }
 
-    public function exec($sql) { 
-        $rs = mysql_query($sql);        
+    public function exec($sql) {
+        $rs = mysql_query($sql);
         return $rs;
     }
 
