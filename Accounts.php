@@ -325,7 +325,7 @@ body {
                                                                 <b>บ้านเลขที่</b>
                                                             </td>
                                                             <td>
-                                                                <input type="text" class="input_text" name="contact[houseno]" value="">
+                                                                <input type="text" class="input_text" name="houseno" value="">
                                                             </td>
                                                         </tr>
                                                         <tr>
@@ -333,7 +333,7 @@ body {
                                                                 <b>ห้อง</b>
                                                             </td>
                                                             <td>
-                                                                <input type="text" class="input_text" name="contact[room]" value="">
+                                                                <input type="text" class="input_text" name="room" value="">
                                                             </td>
                                                         </tr>
                                                         <tr>
@@ -341,7 +341,7 @@ body {
                                                                 <b>ชั้น</b>
                                                             </td>
                                                             <td>
-                                                                <input type="text" class="input_text" name="contact[floor]" value="">
+                                                                <input type="text" class="input_text" name="floor" value="">
                                                             </td>
                                                         </tr>
                                                         <tr>
@@ -349,7 +349,7 @@ body {
                                                                 <b>อาคาร</b>
                                                             </td>
                                                             <td>
-                                                                <input type="text" class="input_text" name="contact[building]" value="">
+                                                                <input type="text" class="input_text" name="building" value="">
                                                             </td>
                                                         </tr>
                                                         <tr>
@@ -357,7 +357,7 @@ body {
                                                                 <b>หมู่บ้าน</b>
                                                             </td>
                                                             <td>
-                                                                <input type="text" class="input_text" name="contact[village]" value="">
+                                                                <input type="text" class="input_text" name="village" value="">
                                                             </td>
                                                         </tr>
                                                         <tr>
@@ -365,7 +365,7 @@ body {
                                                                 <b>หมู่ที่</b>
                                                             </td>
                                                             <td>
-                                                                <input type="text" class="input_text" name="contact[moo]" value="">
+                                                                <input type="text" class="input_text" name="moo" value="">
                                                             </td>
                                                         </tr>
                                                         <tr>
@@ -373,7 +373,7 @@ body {
                                                                 <b>ซอย</b>
                                                             </td>
                                                             <td>
-                                                                <input type="text" class="input_text" name="contact[soi]" value="">
+                                                                <input type="text" class="input_text" name="soi" value="">
                                                             </td>
                                                         </tr>
                                                         <tr>
@@ -381,7 +381,7 @@ body {
                                                                 <b>ถนน</b>
                                                             </td>
                                                             <td>
-                                                                <input type="text" class="input_text" name="contact[road]" value="">
+                                                                <input type="text" class="input_text" name="road" value="">
                                                             </td>
                                                         </tr>
                                                         <tr>
@@ -389,7 +389,7 @@ body {
                                                                 <b>แขวง/ตำบล</b>
                                                             </td>
                                                             <td>
-                                                                <input type="text" class="input_text" name="contact[subdistrict]" value="">
+                                                                <input type="text" class="input_text" name="subdistrict" value="">
                                                             </td>
                                                         </tr>
                                                         <tr>
@@ -397,7 +397,7 @@ body {
                                                                 <b>เขต/อำเภอ</b>
                                                             </td>
                                                             <td>
-                                                                <input type="text" class="input_text" name="contact[district]" value="">
+                                                                <input type="text" class="input_text" name="district" value="">
                                                             </td>
                                                         </tr>
                                                         <tr>
@@ -405,7 +405,7 @@ body {
                                                                 <b>จังหวัด</b>
                                                             </td>
                                                             <td>
-                                                                <input type="text" class="input_text" name="contact[province]" value="">
+                                                                <input type="text" class="input_text" name="province" value="">
                                                             </td>
                                                         </tr>
                                                         <tr>
@@ -413,7 +413,7 @@ body {
                                                                 <b>รหัสไปรษณีย์</b>
                                                             </td>
                                                             <td>
-                                                                <input type="text" class="input_text" name="contact[zipcode]" value="">
+                                                                <input type="text" class="input_text" name="zipcode" value="">
                                                             </td>
                                                         </tr>
                                                     </tbody>
